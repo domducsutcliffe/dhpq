@@ -245,10 +245,10 @@ const state = {
   // Drops the "To ask the Secretary of State…" pro forma from the front of each question
   // in the table. A display preference, not a filter, so Reset Filters leaves it alone.
   shortMode: false,
-  // Set to a yyyy-mm-dd date to show only questions tabled that day. Driven by the
-  // "Today" button, which uses the most recent tabling day present in the data —
-  // not the calendar date, since Parliament doesn't table every day.
-  tabledOn: "",
+  // Inclusive lower bound on dateTabled, set by the recent-day buttons. They count
+  // tabling days present in the data, not calendar days — Parliament doesn't table
+  // every day, so a calendar "today" would usually be empty.
+  tabledSince: "",
 };
 
 const DAY_BUCKET_MAX_SPAN = 60; // days; wider windows switch to monthly buckets
@@ -308,6 +308,7 @@ const elements = {
   resultsCount: document.querySelector("#results-count"),
   fullTextProgress: document.querySelector("#fulltext-progress"),
   todayFilter: document.querySelector("#today-filter"),
+  filterThreeDays: document.querySelector("#filter-3days"),
   exportButton: document.querySelector("#export-xlsx"),
   table: document.querySelector("#question-table"),
   footer: document.querySelector("#data-footer"),
@@ -401,7 +402,7 @@ function isFiltered() {
       state.answer ||
       state.selectedTopic ||
       state.selectedBucket ||
-      state.tabledOn,
+      state.tabledSince,
   );
 }
 
@@ -415,23 +416,51 @@ function latestTabledDate() {
   );
 }
 
-function renderTodayButton() {
-  const btn = elements.todayFilter;
-  if (!btn) return;
-  const latest = latestTabledDate();
-  if (!latest) {
-    btn.hidden = true;
+// The days questions were actually tabled on, newest first — the basis for both
+// recent-day buttons. Fewer than three such days (a fresh window) just means the
+// second button covers whatever there is.
+function recentRanges() {
+  const days = [...new Set(state.questions.map((q) => q.dateTabled).filter(Boolean))].sort().reverse();
+  if (!days.length) return null;
+  return {
+    latest: days[0],
+    today: days[0],
+    threeDays: days[Math.min(2, days.length - 1)],
+    threeDayCount: Math.min(3, days.length),
+  };
+}
+
+function renderRecentButtons() {
+  const todayBtn = elements.todayFilter;
+  const threeBtn = elements.filterThreeDays;
+  if (!todayBtn) return;
+  const r = recentRanges();
+  if (!r) {
+    todayBtn.hidden = true;
+    if (threeBtn) threeBtn.hidden = true;
     return;
   }
-  const active = state.tabledOn === latest;
-  btn.hidden = false;
-  btn.textContent = `⚡ Today · ${shortDate(latest)}`;
-  btn.classList.toggle("active", active);
-  btn.title = active
+
+  const todayActive = state.tabledSince === r.today;
+  todayBtn.hidden = false;
+  todayBtn.textContent = `⚡ Today · ${shortDate(r.today)}`;
+  todayBtn.classList.toggle("active", todayActive);
+  todayBtn.title = todayActive
     ? "Showing only questions tabled on the most recent tabling day — click to clear"
-    : `Show only the questions tabled on ${shortDate(latest)}, the most recent day Parliament tabled questions`;
-  btn.setAttribute("aria-pressed", String(active));
+    : `Show only the questions tabled on ${shortDate(r.today)}, the most recent day Parliament tabled questions`;
+  todayBtn.setAttribute("aria-pressed", String(todayActive));
+
+  if (!threeBtn) return;
+  const threeActive = state.tabledSince === r.threeDays;
+  threeBtn.hidden = false;
+  threeBtn.textContent = `Last ${r.threeDayCount} tabling days`;
+  threeBtn.classList.toggle("active", threeActive);
+  threeBtn.title = `Questions from the last ${r.threeDayCount} days on which questions were tabled (${shortDate(
+    r.threeDays,
+  )} to ${shortDate(r.latest)})`;
+  threeBtn.setAttribute("aria-pressed", String(threeActive));
 }
+
 
 // A share of the whole dataset. Small subjects are the norm across a whole department
 // (the biggest is ~6%), so keep enough precision for a fraction of a percent to still
@@ -525,7 +554,7 @@ function getFilteredQuestions(excludeBucket = false, excludeTopic = false, exclu
       if (bucketKey(question.dateTabled) !== state.selectedBucket) return false;
     }
 
-    if (state.tabledOn && question.dateTabled !== state.tabledOn) return false;
+    if (state.tabledSince && (question.dateTabled || "") < state.tabledSince) return false;
 
     if (!excludeTopic && state.selectedTopic) {
       if (getQuestionTopic(question) !== state.selectedTopic) return false;
@@ -621,14 +650,14 @@ function renderScopeStatus(filteredCount) {
   footerText += " Unofficial personal project built on the UK Parliament Written Questions API — not affiliated with, endorsed by, or produced by any government department.";
   elements.footer.textContent = footerText;
   renderFullTextProgress();
-  renderTodayButton();
+  renderRecentButtons();
 
   const clearBothBtn = document.querySelector("#clear-filters-link");
   if (clearBothBtn) {
     clearBothBtn.addEventListener("click", () => {
       state.selectedBucket = "";
       state.selectedTopic = "";
-      state.tabledOn = "";
+      state.tabledSince = "";
       state.party = "";
       state.region = "";
       elements.partyFilter.value = "";
@@ -2035,13 +2064,24 @@ elements.regionChart.addEventListener("click", (event) => {
   render();
 });
 
+// Both buttons toggle, and setting one replaces the other — they are two views of
+// the same lower bound, not two filters.
+function applyRecentFilter(from) {
+  state.tabledSince = state.tabledSince === from ? "" : from;
+  render();
+}
+
 if (elements.todayFilter) {
   elements.todayFilter.addEventListener("click", () => {
-    const latest = latestTabledDate();
-    if (!latest) return;
-    // Toggle: a second click clears it.
-    state.tabledOn = state.tabledOn === latest ? "" : latest;
-    render();
+    const r = recentRanges();
+    if (r) applyRecentFilter(r.today);
+  });
+}
+
+if (elements.filterThreeDays) {
+  elements.filterThreeDays.addEventListener("click", () => {
+    const r = recentRanges();
+    if (r) applyRecentFilter(r.threeDays);
   });
 }
 
@@ -2059,7 +2099,7 @@ elements.resetFilters.addEventListener("click", () => {
   state.answer = "";
   state.selectedBucket = "";
   state.selectedTopic = "";
-  state.tabledOn = "";
+  state.tabledSince = "";
 
   elements.search.value = "";
   if (elements.searchQuestionOnly) {
@@ -2227,6 +2267,20 @@ window.addEventListener("resize", () => {
   cancelAnimationFrame(resizeTimeout);
   resizeTimeout = requestAnimationFrame(() => {
     render();
+  });
+});
+
+// ── Collapsible chart panels ─────────────────────────────────────────────────
+// The four chart boxes start collapsed so the questions table sits near the top of
+// the page. A chart drawn while its panel is hidden has no width to measure, so
+// re-render on expand rather than at load.
+document.querySelectorAll(".panel-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const panel = toggle.closest(".collapsible");
+    if (!panel) return;
+    const collapsed = panel.classList.toggle("collapsed");
+    toggle.setAttribute("aria-expanded", String(!collapsed));
+    if (!collapsed) requestAnimationFrame(() => render());
   });
 });
 
