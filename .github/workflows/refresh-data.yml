@@ -3,20 +3,31 @@ name: Refresh PQ data
 on:
   workflow_dispatch:
   schedule:
-    # Three runs each morning: 06:30, 07:00 and 08:00 UK time. GitHub's cron is UTC and
-    # has no notion of DST, so these are the BST equivalents — after the clocks go back
-    # in late October they land an hour earlier in UK terms (05:30/06:00/07:00).
+    # GitHub's cron is best-effort: it queues these alongside everyone else's and drops
+    # or delays them under load, worst on the popular minutes (:00, :15, :30, :45).
     #
-    # Only months whose questions actually changed are re-encrypted and committed (the
-    # manifest carries a plaintext hash per month), so a run that finds nothing new adds
-    # nothing to git history. A missed run leaves no hole either: the next one re-fetches
-    # the whole window anyway.
-    - cron: "30 5 * * *"
-    - cron: "0 6 * * *"
-    - cron: "0 7 * * *"
+    # Measured on the sibling repo, 27 Aug – 10 Sep 2026: of seven fires a morning, all
+    # on :00 or :30, exactly two arrived each day and none in the morning — 05:30 UTC
+    # landed at 09:47–11:42, and twice in the late afternoon (16:36, 17:32). A plain
+    # 06:30/07:00/08:00 schedule is three fires on precisely the worst minutes.
+    #
+    # So: odd minutes, and enough attempts that a dropped or delayed fire still leaves
+    # the data fresh by the time anyone looks. A run that finds nothing new takes ~30s
+    # and commits nothing, so the extra fires cost only runner time — free here.
+    #
+    # 06:07 through 08:47 UK during BST; an hour earlier once the clocks go back.
+    - cron: "7,27,47 5,6,7 * * *"
+    # Catch-up, in case the whole morning window was dropped: ~10:13 and ~11:13 UK.
+    - cron: "13 9,10 * * *"
 
 permissions:
   contents: write
+
+# Nine fires a morning can overlap if one runs long. Queue them instead of racing:
+# two refreshes pushing at once is exactly how a run dies on a rejected push.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -53,9 +64,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Refresh PQ dashboard data"
           # A push straight after the commit fails if anything landed on main while the
-          # refresh was running — which is how the scheduled run on 7 Sep died, racing a PR merge.
-          # Rebase the data commit onto whatever arrived and retry; the data is derived, so
-          # there is nothing to conflict over.
+          # refresh was running — a merge, or another fire of this workflow. Rebase onto
+          # whatever arrived and retry; the data is derived, so nothing can conflict.
           for attempt in 1 2 3; do
             if git push; then
               exit 0
