@@ -32,10 +32,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-        # Turns Pages on for the repo if it isn't already, so a fresh repo publishes on
-        # the first run without anyone opening Settings.
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
