@@ -565,6 +565,31 @@ function getFilteredQuestions(excludeBucket = false, excludeTopic = false, exclu
 }
 
 function renderMetrics(items) {
+  // Unfiltered, these five tiles describe the whole dataset — and the refresh already
+  // worked those figures out and wrote them into the summary, which decrypts before the
+  // first chunk of questions. So paint them from there rather than recomputing from
+  // whatever slice of the stream has landed: otherwise every number starts small and
+  // ticks upward for the several seconds the chunks take to arrive.
+  const summary = state.summary;
+  if (summary && !isFiltered()) {
+    const topParty = summary.parties?.[0];
+    const topRegion = summary.regions?.[0];
+    elements.total.textContent = formatNumber.format(summary.totals.questions);
+    elements.answered.textContent = `${formatNumber.format(summary.totals.answered)} / ${formatNumber.format(
+      summary.totals.unanswered,
+    )}`;
+    elements.latest.textContent = shortDate(summary.dateRange?.newestTabled);
+    elements.partyMetric.textContent = topParty
+      ? `${topParty.key} (${formatNumber.format(topParty.count)})`
+      : "-";
+    elements.regionMetric.textContent = topRegion
+      ? `${topRegion.key} (${formatNumber.format(topRegion.count)})`
+      : "-";
+    return;
+  }
+
+  // Filtered, the tiles have to describe the filtered set, so they are counted here —
+  // over whatever has loaded, which is the same set the table and charts are showing.
   const partyCounts = countBy(items, (question) => question.member.partyAbbreviation || question.member.party);
   const regionCounts = countBy(items, (question) => question.region.nhsRegion);
   const answered = items.filter((question) => question.answered).length;
