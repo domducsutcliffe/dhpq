@@ -1,0 +1,67 @@
+name: Refresh PQ data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Three runs each morning: 06:30, 07:00 and 08:00 UK time. GitHub's cron is UTC and
+    # has no notion of DST, so these are the BST equivalents — after the clocks go back
+    # in late October they land an hour earlier in UK terms (05:30/06:00/07:00).
+    #
+    # Only months whose questions actually changed are re-encrypted and committed (the
+    # manifest carries a plaintext hash per month), so a run that finds nothing new adds
+    # nothing to git history. A missed run leaves no hole either: the next one re-fetches
+    # the whole window anyway.
+    - cron: "30 5 * * *"
+    - cron: "0 6 * * *"
+    - cron: "0 7 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Refresh committed dashboard data
+        env:
+          # Lets the refresh decrypt the committed .enc to find its prior state.
+          PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
+        # Re-fetches the whole window month by month (~25 chunks, a few minutes). It does
+        # NOT backfill full answer text — the app fetches answers from the Parliament API
+        # on hover instead (config.enrichAnswers).
+        run: node scripts/refresh-data.mjs
+      - name: Encrypt data files
+        env:
+          PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
+        run: node scripts/encrypt-data.mjs
+      - name: Commit data changes
+        run: |
+          # Stage everything under data/commons (encrypted chunks, the questions-index.json
+          # manifest, and any chunk files added/removed as the dataset grows or shrinks)
+          # plus the shared geography file. -A picks up deletions; .gitignore keeps the
+          # plaintext json out.
+          git add -A data/commons data/constituency-regions.json
+          if git diff --cached --quiet; then
+            echo "No PQ data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh PQ dashboard data"
+          # A push straight after the commit fails if anything landed on main while the
+          # refresh was running — which is how the scheduled run on 7 Sep died, racing a PR merge.
+          # Rebase the data commit onto whatever arrived and retry; the data is derived, so
+          # there is nothing to conflict over.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) — rebasing onto origin/main and retrying."
+            git pull --rebase origin main
+          done
+          echo "Could not push the refreshed data after 3 attempts."
+          exit 1

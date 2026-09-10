@@ -1,0 +1,5856 @@
+{
+  "generatedAt": "2026-09-10T12:13:57.378Z",
+  "source": "https://pages.mysociety.org/2025-constituencies/data/parliament_con_2025/latest/parl_constituencies_2025.csv",
+  "constituencies": [
+    {
+      "name": "Broadland and Fakenham",
+      "shortCode": "UKPARL.2025.BAF",
+      "gssCode": "E14001136",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Great Yarmouth",
+      "shortCode": "UKPARL.2025.GYM",
+      "gssCode": "E14001256",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Norfolk",
+      "shortCode": "UKPARL.2025.NNF",
+      "gssCode": "E14001396",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Norfolk",
+      "shortCode": "UKPARL.2025.MNF",
+      "gssCode": "E14001365",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South West Norfolk",
+      "shortCode": "UKPARL.2025.SWN",
+      "gssCode": "E14001497",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North West Norfolk",
+      "shortCode": "UKPARL.2025.NWN",
+      "gssCode": "E14001405",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North East Cambridgeshire",
+      "shortCode": "UKPARL.2025.NEC",
+      "gssCode": "E14001390",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ely and East Cambridgeshire",
+      "shortCode": "UKPARL.2025.EEC",
+      "gssCode": "E14001224",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Cambridgeshire",
+      "shortCode": "UKPARL.2025.SCB",
+      "gssCode": "E14001481",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cambridge",
+      "shortCode": "UKPARL.2025.CBG",
+      "gssCode": "E14001149",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "St Neots and Mid Cambridgeshire",
+      "shortCode": "UKPARL.2025.SNC",
+      "gssCode": "E14001512",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Huntingdon",
+      "shortCode": "UKPARL.2025.HTD",
+      "gssCode": "E14001298",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North West Cambridgeshire",
+      "shortCode": "UKPARL.2025.NWC",
+      "gssCode": "E14001401",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Peterborough",
+      "shortCode": "UKPARL.2025.PBO",
+      "gssCode": "E14001425",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Bedfordshire",
+      "shortCode": "UKPARL.2025.NBD",
+      "gssCode": "E14001384",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bedford",
+      "shortCode": "UKPARL.2025.BED",
+      "gssCode": "E14001084",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Bedfordshire",
+      "shortCode": "UKPARL.2025.MBD",
+      "gssCode": "E14001359",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dunstable and Leighton Buzzard",
+      "shortCode": "UKPARL.2025.DLB",
+      "gssCode": "E14001206",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Luton South and South Bedfordshire",
+      "shortCode": "UKPARL.2025.LUS",
+      "gssCode": "E14001346",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Clacton",
+      "shortCode": "UKPARL.2025.CLT",
+      "gssCode": "E14001174",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harwich and North Essex",
+      "shortCode": "UKPARL.2025.HWC",
+      "gssCode": "E14001273",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Colchester",
+      "shortCode": "UKPARL.2025.COL",
+      "gssCode": "E14001176",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Witham",
+      "shortCode": "UKPARL.2025.WTM",
+      "gssCode": "E14001590",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Maldon",
+      "shortCode": "UKPARL.2025.MAL",
+      "gssCode": "E14001351",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rayleigh and Wickford",
+      "shortCode": "UKPARL.2025.RAW",
+      "gssCode": "E14001437",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Castle Point",
+      "shortCode": "UKPARL.2025.CPT",
+      "gssCode": "E14001154",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Basildon and East Thurrock",
+      "shortCode": "UKPARL.2025.SBT",
+      "gssCode": "E14001480",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Thurrock",
+      "shortCode": "UKPARL.2025.THK",
+      "gssCode": "E14001546",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Basildon and Billericay",
+      "shortCode": "UKPARL.2025.BAB",
+      "gssCode": "E14001077",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brentwood and Ongar",
+      "shortCode": "UKPARL.2025.BAO",
+      "gssCode": "E14001125",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Epping Forest",
+      "shortCode": "UKPARL.2025.EPF",
+      "gssCode": "E14001226",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harlow",
+      "shortCode": "UKPARL.2025.HLW",
+      "gssCode": "E14001267",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chelmsford",
+      "shortCode": "UKPARL.2025.CHM",
+      "gssCode": "E14001159",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North West Essex",
+      "shortCode": "UKPARL.2025.NWE",
+      "gssCode": "E14001402",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Braintree",
+      "shortCode": "UKPARL.2025.BTR",
+      "gssCode": "E14001121",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Suffolk",
+      "shortCode": "UKPARL.2025.SSF",
+      "gssCode": "E14001494",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ipswich",
+      "shortCode": "UKPARL.2025.IPS",
+      "gssCode": "E14001302",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Suffolk",
+      "shortCode": "UKPARL.2025.WSF",
+      "gssCode": "E14001578",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bury St Edmunds and Stowmarket",
+      "shortCode": "UKPARL.2025.BES",
+      "gssCode": "E14001146",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Central Suffolk and North Ipswich",
+      "shortCode": "UKPARL.2025.CSI",
+      "gssCode": "E14001156",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Suffolk Coastal",
+      "shortCode": "UKPARL.2025.SFC",
+      "gssCode": "E14001530",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Waveney Valley",
+      "shortCode": "UKPARL.2025.WAV",
+      "gssCode": "E14001569",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lowestoft",
+      "shortCode": "UKPARL.2025.LWT",
+      "gssCode": "E14001344",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Norfolk",
+      "shortCode": "UKPARL.2025.SNF",
+      "gssCode": "E14001489",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Norwich South",
+      "shortCode": "UKPARL.2025.NRS",
+      "gssCode": "E14001409",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Norwich North",
+      "shortCode": "UKPARL.2025.NRN",
+      "gssCode": "E14001408",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Luton North",
+      "shortCode": "UKPARL.2025.LUN",
+      "gssCode": "E14001345",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hitchin",
+      "shortCode": "UKPARL.2025.HIT",
+      "gssCode": "E14001289",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North East Hertfordshire",
+      "shortCode": "UKPARL.2025.HNE",
+      "gssCode": "E14001393",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stevenage",
+      "shortCode": "UKPARL.2025.SVG",
+      "gssCode": "E14001516",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hertford and Stortford",
+      "shortCode": "UKPARL.2025.HAS",
+      "gssCode": "E14001283",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Welwyn Hatfield",
+      "shortCode": "UKPARL.2025.WHT",
+      "gssCode": "E14001573",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Broxbourne",
+      "shortCode": "UKPARL.2025.BXB",
+      "gssCode": "E14001139",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hertsmere",
+      "shortCode": "UKPARL.2025.HMR",
+      "gssCode": "E14001284",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South West Hertfordshire",
+      "shortCode": "UKPARL.2025.SWH",
+      "gssCode": "E14001496",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Watford",
+      "shortCode": "UKPARL.2025.WAT",
+      "gssCode": "E14001568",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hemel Hempstead",
+      "shortCode": "UKPARL.2025.HML",
+      "gssCode": "E14001278",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harpenden and Berkhamsted",
+      "shortCode": "UKPARL.2025.HAB",
+      "gssCode": "E14001268",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "St Albans",
+      "shortCode": "UKPARL.2025.STA",
+      "gssCode": "E14001507",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Southend East and Rochford",
+      "shortCode": "UKPARL.2025.SER",
+      "gssCode": "E14001501",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Southend West and Leigh",
+      "shortCode": "UKPARL.2025.SWL",
+      "gssCode": "E14001502",
+      "nation": "England",
+      "parliamentaryRegion": "Eastern",
+      "nhsRegion": "East of England",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "High Peak",
+      "shortCode": "UKPARL.2025.HPK",
+      "gssCode": "E14001287",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Derbyshire Dales",
+      "shortCode": "UKPARL.2025.DED",
+      "gssCode": "E14001195",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Derbyshire",
+      "shortCode": "UKPARL.2025.SDE",
+      "gssCode": "E14001483",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Derby South",
+      "shortCode": "UKPARL.2025.DES",
+      "gssCode": "E14001194",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Derby North",
+      "shortCode": "UKPARL.2025.DEN",
+      "gssCode": "E14001193",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Erewash",
+      "shortCode": "UKPARL.2025.ERW",
+      "gssCode": "E14001228",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Derbyshire",
+      "shortCode": "UKPARL.2025.MDE",
+      "gssCode": "E14001362",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Amber Valley",
+      "shortCode": "UKPARL.2025.ABV",
+      "gssCode": "E14001066",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North East Derbyshire",
+      "shortCode": "UKPARL.2025.NED",
+      "gssCode": "E14001391",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chesterfield",
+      "shortCode": "UKPARL.2025.CHD",
+      "gssCode": "E14001165",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bolsover",
+      "shortCode": "UKPARL.2025.BOL",
+      "gssCode": "E14001109",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rutland and Stamford",
+      "shortCode": "UKPARL.2025.RUT",
+      "gssCode": "E14001458",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Grantham and Bourne",
+      "shortCode": "UKPARL.2025.GAB",
+      "gssCode": "E14001253",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sleaford and North Hykeham",
+      "shortCode": "UKPARL.2025.SLR",
+      "gssCode": "E14001476",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lincoln",
+      "shortCode": "UKPARL.2025.LNC",
+      "gssCode": "E14001336",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gainsborough",
+      "shortCode": "UKPARL.2025.GNB",
+      "gssCode": "E14001243",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Louth and Horncastle",
+      "shortCode": "UKPARL.2025.LAH",
+      "gssCode": "E14001343",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Boston and Skegness",
+      "shortCode": "UKPARL.2025.BAS",
+      "gssCode": "E14001114",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Holland and The Deepings",
+      "shortCode": "UKPARL.2025.SHD",
+      "gssCode": "E14001487",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rushcliffe",
+      "shortCode": "UKPARL.2025.RCF",
+      "gssCode": "E14001457",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Nottingham South",
+      "shortCode": "UKPARL.2025.NGS",
+      "gssCode": "E14001412",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Nottingham East",
+      "shortCode": "UKPARL.2025.NGE",
+      "gssCode": "E14001410",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Nottingham North and Kimberley",
+      "shortCode": "UKPARL.2025.NGN",
+      "gssCode": "E14001411",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Broxtowe",
+      "shortCode": "UKPARL.2025.BXT",
+      "gssCode": "E14001140",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ashfield",
+      "shortCode": "UKPARL.2025.ASF",
+      "gssCode": "E14001068",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mansfield",
+      "shortCode": "UKPARL.2025.MAN",
+      "gssCode": "E14001355",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gedling",
+      "shortCode": "UKPARL.2025.GED",
+      "gssCode": "E14001245",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sherwood Forest",
+      "shortCode": "UKPARL.2025.SWF",
+      "gssCode": "E14001471",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newark",
+      "shortCode": "UKPARL.2025.NWK",
+      "gssCode": "E14001375",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bassetlaw",
+      "shortCode": "UKPARL.2025.BSL",
+      "gssCode": "E14001079",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Northampton South",
+      "shortCode": "UKPARL.2025.NHS",
+      "gssCode": "E14001407",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Northamptonshire",
+      "shortCode": "UKPARL.2025.SNH",
+      "gssCode": "E14001490",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Daventry",
+      "shortCode": "UKPARL.2025.DAV",
+      "gssCode": "E14001192",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Northampton North",
+      "shortCode": "UKPARL.2025.NHN",
+      "gssCode": "E14001406",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wellingborough and Rushden",
+      "shortCode": "UKPARL.2025.WBR",
+      "gssCode": "E14001571",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Corby and East Northamptonshire",
+      "shortCode": "UKPARL.2025.COR",
+      "gssCode": "E14001179",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kettering",
+      "shortCode": "UKPARL.2025.KET",
+      "gssCode": "E14001311",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harborough, Oadby and Wigston",
+      "shortCode": "UKPARL.2025.HOW",
+      "gssCode": "E14001266",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Leicestershire",
+      "shortCode": "UKPARL.2025.MLE",
+      "gssCode": "E14001364",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Leicestershire",
+      "shortCode": "UKPARL.2025.SLE",
+      "gssCode": "E14001488",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leicester West",
+      "shortCode": "UKPARL.2025.LEW",
+      "gssCode": "E14001328",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leicester South",
+      "shortCode": "UKPARL.2025.LES",
+      "gssCode": "E14001327",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leicester East",
+      "shortCode": "UKPARL.2025.LEE",
+      "gssCode": "E14001326",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hinckley and Bosworth",
+      "shortCode": "UKPARL.2025.HKB",
+      "gssCode": "E14001288",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North West Leicestershire",
+      "shortCode": "UKPARL.2025.NWL",
+      "gssCode": "E14001404",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Loughborough",
+      "shortCode": "UKPARL.2025.LBO",
+      "gssCode": "E14001342",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Melton and Syston",
+      "shortCode": "UKPARL.2025.MAS",
+      "gssCode": "E14001357",
+      "nation": "England",
+      "parliamentaryRegion": "East Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Edmonton and Winchmore Hill",
+      "shortCode": "UKPARL.2025.EWH",
+      "gssCode": "E14001221",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Enfield North",
+      "shortCode": "UKPARL.2025.ENF",
+      "gssCode": "E14001225",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Holborn and St Pancras",
+      "shortCode": "UKPARL.2025.HSP",
+      "gssCode": "E14001290",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hayes and Harlington",
+      "shortCode": "UKPARL.2025.HAY",
+      "gssCode": "E14001276",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ealing North",
+      "shortCode": "UKPARL.2025.ELN",
+      "gssCode": "E14001208",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ealing Southall",
+      "shortCode": "UKPARL.2025.ELS",
+      "gssCode": "E14001209",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ealing Central and Acton",
+      "shortCode": "UKPARL.2025.ECA",
+      "gssCode": "E14001207",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Croydon West",
+      "shortCode": "UKPARL.2025.CRW",
+      "gssCode": "E14001188",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Streatham and Croydon North",
+      "shortCode": "UKPARL.2025.SCN",
+      "gssCode": "E14001527",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Croydon East",
+      "shortCode": "UKPARL.2025.CRE",
+      "gssCode": "E14001186",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Clapham and Brixton Hill",
+      "shortCode": "UKPARL.2025.CBH",
+      "gssCode": "E14001175",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dulwich and West Norwood",
+      "shortCode": "UKPARL.2025.DWN",
+      "gssCode": "E14001205",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lewisham West and East Dulwich",
+      "shortCode": "UKPARL.2025.LWW",
+      "gssCode": "E14001333",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Vauxhall and Camberwell Green",
+      "shortCode": "UKPARL.2025.VCG",
+      "gssCode": "E14001559",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bermondsey and Old Southwark",
+      "shortCode": "UKPARL.2025.BOS",
+      "gssCode": "E14001085",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lewisham North",
+      "shortCode": "UKPARL.2025.LWN",
+      "gssCode": "E14001332",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Peckham",
+      "shortCode": "UKPARL.2025.PKM",
+      "gssCode": "E14001421",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lewisham East",
+      "shortCode": "UKPARL.2025.LWE",
+      "gssCode": "E14001331",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Greenwich and Woolwich",
+      "shortCode": "UKPARL.2025.GAW",
+      "gssCode": "E14001257",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Eltham and Chislehurst",
+      "shortCode": "UKPARL.2025.EAC",
+      "gssCode": "E14001223",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Erith and Thamesmead",
+      "shortCode": "UKPARL.2025.EAT",
+      "gssCode": "E14001229",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bexleyheath and Crayford",
+      "shortCode": "UKPARL.2025.BXC",
+      "gssCode": "E14001089",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chingford and Woodford Green",
+      "shortCode": "UKPARL.2025.CWG",
+      "gssCode": "E14001167",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Walthamstow",
+      "shortCode": "UKPARL.2025.WHW",
+      "gssCode": "E14001563",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leyton and Wanstead",
+      "shortCode": "UKPARL.2025.LAW",
+      "gssCode": "E14001334",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ilford North",
+      "shortCode": "UKPARL.2025.ILN",
+      "gssCode": "E14001300",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ilford South",
+      "shortCode": "UKPARL.2025.ILS",
+      "gssCode": "E14001301",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Barking",
+      "shortCode": "UKPARL.2025.BKG",
+      "gssCode": "E14001073",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Ham and Beckton",
+      "shortCode": "UKPARL.2025.WHB",
+      "gssCode": "E14001576",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Ham",
+      "shortCode": "UKPARL.2025.EHM",
+      "gssCode": "E14001213",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stratford and Bow",
+      "shortCode": "UKPARL.2025.SAB",
+      "gssCode": "E14001525",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Poplar and Limehouse",
+      "shortCode": "UKPARL.2025.PAL",
+      "gssCode": "E14001430",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bethnal Green and Stepney",
+      "shortCode": "UKPARL.2025.BGS",
+      "gssCode": "E14001086",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harrow West",
+      "shortCode": "UKPARL.2025.HAW",
+      "gssCode": "E14001271",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Feltham and Heston",
+      "shortCode": "UKPARL.2025.FEL",
+      "gssCode": "E14001236",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Twickenham",
+      "shortCode": "UKPARL.2025.TWI",
+      "gssCode": "E14001556",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hammersmith and Chiswick",
+      "shortCode": "UKPARL.2025.HAC",
+      "gssCode": "E14001264",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brentford and Isleworth",
+      "shortCode": "UKPARL.2025.BAI",
+      "gssCode": "E14001124",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kensington and Bayswater",
+      "shortCode": "UKPARL.2025.KAB",
+      "gssCode": "E14001310",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Old Bexley and Sidcup",
+      "shortCode": "UKPARL.2025.OBS",
+      "gssCode": "E14001414",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Beckenham and Penge",
+      "shortCode": "UKPARL.2025.BAP",
+      "gssCode": "E14001083",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Queen's Park and Maida Vale",
+      "shortCode": "UKPARL.2025.QPK",
+      "gssCode": "E14001435",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brent East",
+      "shortCode": "UKPARL.2025.BEA",
+      "gssCode": "E14001122",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brent West",
+      "shortCode": "UKPARL.2025.BWE",
+      "gssCode": "E14001123",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Southgate and Wood Green",
+      "shortCode": "UKPARL.2025.SWG",
+      "gssCode": "E14001503",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Finchley and Golders Green",
+      "shortCode": "UKPARL.2025.FGG",
+      "gssCode": "E14001238",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hendon",
+      "shortCode": "UKPARL.2025.HEN",
+      "gssCode": "E14001279",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chipping Barnet",
+      "shortCode": "UKPARL.2025.CPB",
+      "gssCode": "E14001169",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hornsey and Friern Barnet",
+      "shortCode": "UKPARL.2025.HFB",
+      "gssCode": "E14001293",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tottenham",
+      "shortCode": "UKPARL.2025.TOT",
+      "gssCode": "E14001553",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hackney North and Stoke Newington",
+      "shortCode": "UKPARL.2025.HSN",
+      "gssCode": "E14001259",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Putney",
+      "shortCode": "UKPARL.2025.PUT",
+      "gssCode": "E14001434",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Battersea",
+      "shortCode": "UKPARL.2025.BAT",
+      "gssCode": "E14001081",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tooting",
+      "shortCode": "UKPARL.2025.TOO",
+      "gssCode": "E14001550",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Carshalton and Wallington",
+      "shortCode": "UKPARL.2025.CAW",
+      "gssCode": "E14001153",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sutton and Cheam",
+      "shortCode": "UKPARL.2025.SAC",
+      "gssCode": "E14001534",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Croydon South",
+      "shortCode": "UKPARL.2025.CRS",
+      "gssCode": "E14001187",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Islington North",
+      "shortCode": "UKPARL.2025.ISN",
+      "gssCode": "E14001305",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Islington South and Finsbury",
+      "shortCode": "UKPARL.2025.ISS",
+      "gssCode": "E14001306",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hackney South and Shoreditch",
+      "shortCode": "UKPARL.2025.HSD",
+      "gssCode": "E14001260",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harrow East",
+      "shortCode": "UKPARL.2025.HAE",
+      "gssCode": "E14001270",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chelsea and Fulham",
+      "shortCode": "UKPARL.2025.CAF",
+      "gssCode": "E14001160",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Orpington",
+      "shortCode": "UKPARL.2025.ORP",
+      "gssCode": "E14001417",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bromley and Biggin Hill",
+      "shortCode": "UKPARL.2025.BBH",
+      "gssCode": "E14001137",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dagenham and Rainham",
+      "shortCode": "UKPARL.2025.DAR",
+      "gssCode": "E14001189",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hornchurch and Upminster",
+      "shortCode": "UKPARL.2025.HAU",
+      "gssCode": "E14001292",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Romford",
+      "shortCode": "UKPARL.2025.RMF",
+      "gssCode": "E14001448",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mitcham and Morden",
+      "shortCode": "UKPARL.2025.MAM",
+      "gssCode": "E14001371",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kingston and Surbiton",
+      "shortCode": "UKPARL.2025.KAS",
+      "gssCode": "E14001312",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wimbledon",
+      "shortCode": "UKPARL.2025.WIM",
+      "gssCode": "E14001586",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Richmond Park",
+      "shortCode": "UKPARL.2025.RPK",
+      "gssCode": "E14001445",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Uxbridge and South Ruislip",
+      "shortCode": "UKPARL.2025.UXB",
+      "gssCode": "E14001558",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ruislip, Northwood and Pinner",
+      "shortCode": "UKPARL.2025.RNP",
+      "gssCode": "E14001454",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cramlington and Killingworth",
+      "shortCode": "UKPARL.2025.CRK",
+      "gssCode": "E14001183",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blaydon and Consett",
+      "shortCode": "UKPARL.2025.BAC",
+      "gssCode": "E14001106",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hexham",
+      "shortCode": "UKPARL.2025.HEX",
+      "gssCode": "E14001285",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blyth and Ashington",
+      "shortCode": "UKPARL.2025.BAA",
+      "gssCode": "E14001107",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gateshead Central and Whickham",
+      "shortCode": "UKPARL.2025.GCW",
+      "gssCode": "E14001244",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tynemouth",
+      "shortCode": "UKPARL.2025.TYN",
+      "gssCode": "E14001557",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newcastle upon Tyne North",
+      "shortCode": "UKPARL.2025.NCN",
+      "gssCode": "E14001379",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newcastle upon Tyne Central and West",
+      "shortCode": "UKPARL.2025.NCL",
+      "gssCode": "E14001377",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newcastle upon Tyne East and Wallsend",
+      "shortCode": "UKPARL.2025.NCE",
+      "gssCode": "E14001378",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sunderland Central",
+      "shortCode": "UKPARL.2025.SUN",
+      "gssCode": "E14001531",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Shields",
+      "shortCode": "UKPARL.2025.SSH",
+      "gssCode": "E14001492",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Jarrow and Gateshead East",
+      "shortCode": "UKPARL.2025.JGE",
+      "gssCode": "E14001307",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "City of Durham",
+      "shortCode": "UKPARL.2025.DHM",
+      "gssCode": "E14001173",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Easington",
+      "shortCode": "UKPARL.2025.EAS",
+      "gssCode": "E14001211",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hartlepool",
+      "shortCode": "UKPARL.2025.HPL",
+      "gssCode": "E14001272",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Durham",
+      "shortCode": "UKPARL.2025.NDH",
+      "gssCode": "E14001389",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Washington and Gateshead South",
+      "shortCode": "UKPARL.2025.WGS",
+      "gssCode": "E14001567",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Houghton and Sunderland South",
+      "shortCode": "UKPARL.2025.HSS",
+      "gssCode": "E14001295",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bishop Auckland",
+      "shortCode": "UKPARL.2025.BIA",
+      "gssCode": "E14001101",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newton Aycliffe and Spennymoor",
+      "shortCode": "UKPARL.2025.NAS",
+      "gssCode": "E14001382",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stockton North",
+      "shortCode": "UKPARL.2025.SKN",
+      "gssCode": "E14001518",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Middlesbrough and Thornaby East",
+      "shortCode": "UKPARL.2025.MTE",
+      "gssCode": "E14001367",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Middlesbrough South and East Cleveland",
+      "shortCode": "UKPARL.2025.MCL",
+      "gssCode": "E14001368",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Redcar",
+      "shortCode": "UKPARL.2025.RED",
+      "gssCode": "E14001440",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Darlington",
+      "shortCode": "UKPARL.2025.DRL",
+      "gssCode": "E14001190",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stockton West",
+      "shortCode": "UKPARL.2025.SKW",
+      "gssCode": "E14001519",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Northumberland",
+      "shortCode": "UKPARL.2025.NNU",
+      "gssCode": "E14001397",
+      "nation": "England",
+      "parliamentaryRegion": "North East",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leigh and Atherton",
+      "shortCode": "UKPARL.2025.LAA",
+      "gssCode": "E14001329",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Makerfield",
+      "shortCode": "UKPARL.2025.MKF",
+      "gssCode": "E14001350",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Carlisle",
+      "shortCode": "UKPARL.2025.CAR",
+      "gssCode": "E14001152",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Morecambe and Lunesdale",
+      "shortCode": "UKPARL.2025.MOR",
+      "gssCode": "E14001372",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lancaster and Wyre",
+      "shortCode": "UKPARL.2025.LAN",
+      "gssCode": "E14001318",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ribble Valley",
+      "shortCode": "UKPARL.2025.RIV",
+      "gssCode": "E14001443",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blackpool South",
+      "shortCode": "UKPARL.2025.BPS",
+      "gssCode": "E14001105",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Fylde",
+      "shortCode": "UKPARL.2025.FYL",
+      "gssCode": "E14001242",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Preston",
+      "shortCode": "UKPARL.2025.PRE",
+      "gssCode": "E14001433",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Burnley",
+      "shortCode": "UKPARL.2025.BUR",
+      "gssCode": "E14001142",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Pendle and Clitheroe",
+      "shortCode": "UKPARL.2025.PDL",
+      "gssCode": "E14001422",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blackpool North and Fleetwood",
+      "shortCode": "UKPARL.2025.BPN",
+      "gssCode": "E14001104",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blackburn",
+      "shortCode": "UKPARL.2025.BBN",
+      "gssCode": "E14001102",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hyndburn",
+      "shortCode": "UKPARL.2025.HYB",
+      "gssCode": "E14001299",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rossendale and Darwen",
+      "shortCode": "UKPARL.2025.RAD",
+      "gssCode": "E14001450",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Southport",
+      "shortCode": "UKPARL.2025.SOP",
+      "gssCode": "E14001504",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Ribble",
+      "shortCode": "UKPARL.2025.SRI",
+      "gssCode": "E14001491",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Lancashire",
+      "shortCode": "UKPARL.2025.WLA",
+      "gssCode": "E14001577",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sefton Central",
+      "shortCode": "UKPARL.2025.SEF",
+      "gssCode": "E14001463",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bootle",
+      "shortCode": "UKPARL.2025.BTL",
+      "gssCode": "E14001113",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rochdale",
+      "shortCode": "UKPARL.2025.RCD",
+      "gssCode": "E14001446",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chorley",
+      "shortCode": "UKPARL.2025.CRL",
+      "gssCode": "E14001170",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bury North",
+      "shortCode": "UKPARL.2025.BUN",
+      "gssCode": "E14001144",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Heywood and Middleton North",
+      "shortCode": "UKPARL.2025.HMN",
+      "gssCode": "E14001286",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bury South",
+      "shortCode": "UKPARL.2025.BUS",
+      "gssCode": "E14001145",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bolton West",
+      "shortCode": "UKPARL.2025.BLW",
+      "gssCode": "E14001112",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bolton North East",
+      "shortCode": "UKPARL.2025.BLN",
+      "gssCode": "E14001110",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bolton South and Walkden",
+      "shortCode": "UKPARL.2025.BLS",
+      "gssCode": "E14001111",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Liverpool Riverside",
+      "shortCode": "UKPARL.2025.LRV",
+      "gssCode": "E14001338",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Liverpool Wavertree",
+      "shortCode": "UKPARL.2025.LWV",
+      "gssCode": "E14001340",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Liverpool Garston",
+      "shortCode": "UKPARL.2025.LGT",
+      "gssCode": "E14001337",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Knowsley",
+      "shortCode": "UKPARL.2025.KNW",
+      "gssCode": "E14001317",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Oldham East and Saddleworth",
+      "shortCode": "UKPARL.2025.OLE",
+      "gssCode": "E14001415",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Oldham West, Chadderton and Royton",
+      "shortCode": "UKPARL.2025.OLW",
+      "gssCode": "E14001416",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Liverpool Walton",
+      "shortCode": "UKPARL.2025.LWL",
+      "gssCode": "E14001339",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wigan",
+      "shortCode": "UKPARL.2025.WGN",
+      "gssCode": "E14001585",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Widnes and Halewood",
+      "shortCode": "UKPARL.2025.WAH",
+      "gssCode": "E14001584",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "St Helens North",
+      "shortCode": "UKPARL.2025.SHN",
+      "gssCode": "E14001509",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blackley and Middleton South",
+      "shortCode": "UKPARL.2025.BMS",
+      "gssCode": "E14001103",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stalybridge and Hyde",
+      "shortCode": "UKPARL.2025.SAH",
+      "gssCode": "E14001515",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ashton-under-Lyne",
+      "shortCode": "UKPARL.2025.AUL",
+      "gssCode": "E14001070",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Liverpool West Derby",
+      "shortCode": "UKPARL.2025.LWD",
+      "gssCode": "E14001341",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Salford",
+      "shortCode": "UKPARL.2025.SFD",
+      "gssCode": "E14001459",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Worsley and Eccles",
+      "shortCode": "UKPARL.2025.WSL",
+      "gssCode": "E14001598",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "St Helens South and Whiston",
+      "shortCode": "UKPARL.2025.SHS",
+      "gssCode": "E14001510",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stretford and Urmston",
+      "shortCode": "UKPARL.2025.SAU",
+      "gssCode": "E14001528",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Warrington South",
+      "shortCode": "UKPARL.2025.WAS",
+      "gssCode": "E14001565",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Warrington North",
+      "shortCode": "UKPARL.2025.WAN",
+      "gssCode": "E14001564",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Altrincham and Sale West",
+      "shortCode": "UKPARL.2025.ASW",
+      "gssCode": "E14001065",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wythenshawe and Sale East",
+      "shortCode": "UKPARL.2025.WYT",
+      "gssCode": "E14001602",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Manchester Central",
+      "shortCode": "UKPARL.2025.MCT",
+      "gssCode": "E14001352",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tatton",
+      "shortCode": "UKPARL.2025.TAT",
+      "gssCode": "E14001539",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gorton and Denton",
+      "shortCode": "UKPARL.2025.GAD",
+      "gssCode": "E14001251",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wirral West",
+      "shortCode": "UKPARL.2025.WIR",
+      "gssCode": "E14001589",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Cheshire",
+      "shortCode": "UKPARL.2025.MCH",
+      "gssCode": "E14001361",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Manchester Rusholme",
+      "shortCode": "UKPARL.2025.MRH",
+      "gssCode": "E14001353",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Manchester Withington",
+      "shortCode": "UKPARL.2025.MWI",
+      "gssCode": "E14001354",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chester South and Eddisbury",
+      "shortCode": "UKPARL.2025.CHS",
+      "gssCode": "E14001164",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Crewe and Nantwich",
+      "shortCode": "UKPARL.2025.CWN",
+      "gssCode": "E14001185",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stockport",
+      "shortCode": "UKPARL.2025.SPT",
+      "gssCode": "E14001517",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wallasey",
+      "shortCode": "UKPARL.2025.WLL",
+      "gssCode": "E14001561",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Congleton",
+      "shortCode": "UKPARL.2025.CNG",
+      "gssCode": "E14001178",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Macclesfield",
+      "shortCode": "UKPARL.2025.MAC",
+      "gssCode": "E14001347",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chester North and Neston",
+      "shortCode": "UKPARL.2025.CHN",
+      "gssCode": "E14001163",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cheadle",
+      "shortCode": "UKPARL.2025.CDL",
+      "gssCode": "E14001158",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ellesmere Port and Bromborough",
+      "shortCode": "UKPARL.2025.ELP",
+      "gssCode": "E14001222",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birkenhead",
+      "shortCode": "UKPARL.2025.BKH",
+      "gssCode": "E14001091",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Runcorn and Helsby",
+      "shortCode": "UKPARL.2025.RAH",
+      "gssCode": "E14001455",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Westmorland and Lonsdale",
+      "shortCode": "UKPARL.2025.WAL",
+      "gssCode": "E14001580",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Barrow and Furness",
+      "shortCode": "UKPARL.2025.BRW",
+      "gssCode": "E14001076",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hazel Grove",
+      "shortCode": "UKPARL.2025.HAZ",
+      "gssCode": "E14001277",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Penrith and Solway",
+      "shortCode": "UKPARL.2025.PEN",
+      "gssCode": "E14001424",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Whitehaven and Workington",
+      "shortCode": "UKPARL.2025.WAW",
+      "gssCode": "E14001583",
+      "nation": "England",
+      "parliamentaryRegion": "North West",
+      "nhsRegion": "North West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bognor Regis and Littlehampton",
+      "shortCode": "UKPARL.2025.BRL",
+      "gssCode": "E14001108",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Arundel and South Downs",
+      "shortCode": "UKPARL.2025.ASD",
+      "gssCode": "E14001067",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aylesbury",
+      "shortCode": "UKPARL.2025.AYS",
+      "gssCode": "E14001071",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Milton Keynes North",
+      "shortCode": "UKPARL.2025.MKN",
+      "gssCode": "E14001370",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Milton Keynes Central",
+      "shortCode": "UKPARL.2025.MKC",
+      "gssCode": "E14001369",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Buckingham and Bletchley",
+      "shortCode": "UKPARL.2025.BUC",
+      "gssCode": "E14001141",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Buckinghamshire",
+      "shortCode": "UKPARL.2025.MBU",
+      "gssCode": "E14001360",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wycombe",
+      "shortCode": "UKPARL.2025.WYC",
+      "gssCode": "E14001600",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Banbury",
+      "shortCode": "UKPARL.2025.BAN",
+      "gssCode": "E14001072",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bicester and Woodstock",
+      "shortCode": "UKPARL.2025.BWS",
+      "gssCode": "E14001090",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Henley and Thame",
+      "shortCode": "UKPARL.2025.HAT",
+      "gssCode": "E14001280",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Didcot and Wantage",
+      "shortCode": "UKPARL.2025.DAW",
+      "gssCode": "E14001197",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Witney",
+      "shortCode": "UKPARL.2025.WIT",
+      "gssCode": "E14001591",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Oxford West and Abingdon",
+      "shortCode": "UKPARL.2025.OXW",
+      "gssCode": "E14001420",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Oxford East",
+      "shortCode": "UKPARL.2025.OXE",
+      "gssCode": "E14001419",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newbury",
+      "shortCode": "UKPARL.2025.NBY",
+      "gssCode": "E14001376",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Reading West and Mid Berkshire",
+      "shortCode": "UKPARL.2025.RDW",
+      "gssCode": "E14001439",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Reading Central",
+      "shortCode": "UKPARL.2025.RDG",
+      "gssCode": "E14001438",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Earley and Woodley",
+      "shortCode": "UKPARL.2025.EAR",
+      "gssCode": "E14001210",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wokingham",
+      "shortCode": "UKPARL.2025.WKM",
+      "gssCode": "E14001593",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bracknell",
+      "shortCode": "UKPARL.2025.BRK",
+      "gssCode": "E14001117",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Maidenhead",
+      "shortCode": "UKPARL.2025.MAI",
+      "gssCode": "E14001348",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Slough",
+      "shortCode": "UKPARL.2025.SLO",
+      "gssCode": "E14001477",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Windsor",
+      "shortCode": "UKPARL.2025.WND",
+      "gssCode": "E14001588",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Spelthorne",
+      "shortCode": "UKPARL.2025.SPL",
+      "gssCode": "E14001505",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Runnymede and Weybridge",
+      "shortCode": "UKPARL.2025.RUN",
+      "gssCode": "E14001456",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Esher and Walton",
+      "shortCode": "UKPARL.2025.EAW",
+      "gssCode": "E14001230",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Epsom and Ewell",
+      "shortCode": "UKPARL.2025.EAE",
+      "gssCode": "E14001227",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Reigate",
+      "shortCode": "UKPARL.2025.REI",
+      "gssCode": "E14001442",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Surrey",
+      "shortCode": "UKPARL.2025.ESU",
+      "gssCode": "E14001215",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dorking and Horley",
+      "shortCode": "UKPARL.2025.DAH",
+      "gssCode": "E14001201",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Guildford",
+      "shortCode": "UKPARL.2025.GUI",
+      "gssCode": "E14001258",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Godalming and Ash",
+      "shortCode": "UKPARL.2025.GAA",
+      "gssCode": "E14001249",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Woking",
+      "shortCode": "UKPARL.2025.WOK",
+      "gssCode": "E14001592",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Surrey Heath",
+      "shortCode": "UKPARL.2025.SRH",
+      "gssCode": "E14001532",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Farnham and Bordon",
+      "shortCode": "UKPARL.2025.FAB",
+      "gssCode": "E14001234",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Hampshire",
+      "shortCode": "UKPARL.2025.EHA",
+      "gssCode": "E14001214",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North East Hampshire",
+      "shortCode": "UKPARL.2025.NEH",
+      "gssCode": "E14001392",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Basingstoke",
+      "shortCode": "UKPARL.2025.BSK",
+      "gssCode": "E14001078",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North West Hampshire",
+      "shortCode": "UKPARL.2025.NWH",
+      "gssCode": "E14001403",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Romsey and Southampton North",
+      "shortCode": "UKPARL.2025.RSO",
+      "gssCode": "E14001449",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Southampton Test",
+      "shortCode": "UKPARL.2025.SOT",
+      "gssCode": "E14001500",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Southampton Itchen",
+      "shortCode": "UKPARL.2025.SOI",
+      "gssCode": "E14001499",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "New Forest East",
+      "shortCode": "UKPARL.2025.NFE",
+      "gssCode": "E14001373",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "New Forest West",
+      "shortCode": "UKPARL.2025.NFW",
+      "gssCode": "E14001374",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Eastleigh",
+      "shortCode": "UKPARL.2025.ESL",
+      "gssCode": "E14001220",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hamble Valley",
+      "shortCode": "UKPARL.2025.HBV",
+      "gssCode": "E14001263",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Winchester",
+      "shortCode": "UKPARL.2025.WIN",
+      "gssCode": "E14001587",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Fareham and Waterlooville",
+      "shortCode": "UKPARL.2025.FAW",
+      "gssCode": "E14001233",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gosport",
+      "shortCode": "UKPARL.2025.GOS",
+      "gssCode": "E14001252",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Portsmouth North",
+      "shortCode": "UKPARL.2025.PON",
+      "gssCode": "E14001431",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Portsmouth South",
+      "shortCode": "UKPARL.2025.POS",
+      "gssCode": "E14001432",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Havant",
+      "shortCode": "UKPARL.2025.HAV",
+      "gssCode": "E14001275",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chichester",
+      "shortCode": "UKPARL.2025.CCH",
+      "gssCode": "E14001166",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Worthing West",
+      "shortCode": "UKPARL.2025.WRH",
+      "gssCode": "E14001599",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Worthing and Shoreham",
+      "shortCode": "UKPARL.2025.EWS",
+      "gssCode": "E14001218",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aldershot",
+      "shortCode": "UKPARL.2025.AHT",
+      "gssCode": "E14001063",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hove and Portslade",
+      "shortCode": "UKPARL.2025.HAP",
+      "gssCode": "E14001296",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Sussex",
+      "shortCode": "UKPARL.2025.MSU",
+      "gssCode": "E14001366",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Horsham",
+      "shortCode": "UKPARL.2025.HRH",
+      "gssCode": "E14001294",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Crawley",
+      "shortCode": "UKPARL.2025.CRA",
+      "gssCode": "E14001184",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Eastbourne",
+      "shortCode": "UKPARL.2025.EBN",
+      "gssCode": "E14001219",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bexhill and Battle",
+      "shortCode": "UKPARL.2025.BEX",
+      "gssCode": "E14001088",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hastings and Rye",
+      "shortCode": "UKPARL.2025.HAR",
+      "gssCode": "E14001274",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tunbridge Wells",
+      "shortCode": "UKPARL.2025.TNW",
+      "gssCode": "E14001555",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gravesham",
+      "shortCode": "UKPARL.2025.GRV",
+      "gssCode": "E14001254",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rochester and Strood",
+      "shortCode": "UKPARL.2025.RAS",
+      "gssCode": "E14001447",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chatham and Aylesford",
+      "shortCode": "UKPARL.2025.CTM",
+      "gssCode": "E14001157",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gillingham and Rainham",
+      "shortCode": "UKPARL.2025.GAR",
+      "gssCode": "E14001246",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sittingbourne and Sheppey",
+      "shortCode": "UKPARL.2025.SAS",
+      "gssCode": "E14001474",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ashford",
+      "shortCode": "UKPARL.2025.ASH",
+      "gssCode": "E14001069",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Folkestone and Hythe",
+      "shortCode": "UKPARL.2025.FAH",
+      "gssCode": "E14001239",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dover and Deal",
+      "shortCode": "UKPARL.2025.DAD",
+      "gssCode": "E14001202",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Canterbury",
+      "shortCode": "UKPARL.2025.CTB",
+      "gssCode": "E14001151",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Herne Bay and Sandwich",
+      "shortCode": "UKPARL.2025.HBS",
+      "gssCode": "E14001282",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Thanet",
+      "shortCode": "UKPARL.2025.ETH",
+      "gssCode": "E14001216",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Isle of Wight West",
+      "shortCode": "UKPARL.2025.IWW",
+      "gssCode": "E14001304",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Isle of Wight East",
+      "shortCode": "UKPARL.2025.IWE",
+      "gssCode": "E14001303",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Beaconsfield",
+      "shortCode": "UKPARL.2025.BCF",
+      "gssCode": "E14001082",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brighton Pavilion",
+      "shortCode": "UKPARL.2025.BPV",
+      "gssCode": "E14001130",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brighton Kemptown and Peacehaven",
+      "shortCode": "UKPARL.2025.BKP",
+      "gssCode": "E14001129",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chesham and Amersham",
+      "shortCode": "UKPARL.2025.CAA",
+      "gssCode": "E14001162",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dartford",
+      "shortCode": "UKPARL.2025.DFD",
+      "gssCode": "E14001191",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Grinstead and Uckfield",
+      "shortCode": "UKPARL.2025.EGU",
+      "gssCode": "E14001212",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Faversham and Mid Kent",
+      "shortCode": "UKPARL.2025.FAV",
+      "gssCode": "E14001235",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lewes",
+      "shortCode": "UKPARL.2025.LWS",
+      "gssCode": "E14001330",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Maidstone and Malling",
+      "shortCode": "UKPARL.2025.MDS",
+      "gssCode": "E14001349",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sevenoaks",
+      "shortCode": "UKPARL.2025.SEV",
+      "gssCode": "E14001465",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sussex Weald",
+      "shortCode": "UKPARL.2025.SXW",
+      "gssCode": "E14001533",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tonbridge",
+      "shortCode": "UKPARL.2025.TON",
+      "gssCode": "E14001549",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Weald of Kent",
+      "shortCode": "UKPARL.2025.WKT",
+      "gssCode": "E14001570",
+      "nation": "England",
+      "parliamentaryRegion": "South East",
+      "nhsRegion": "South East",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Frome and East Somerset",
+      "shortCode": "UKPARL.2025.FES",
+      "gssCode": "E14001241",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glastonbury and Somerton",
+      "shortCode": "UKPARL.2025.GAS",
+      "gssCode": "E14001247",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Dorset and North Poole",
+      "shortCode": "UKPARL.2025.MDP",
+      "gssCode": "E14001363",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Dorset",
+      "shortCode": "UKPARL.2025.SDS",
+      "gssCode": "E14001485",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Dorset",
+      "shortCode": "UKPARL.2025.NDS",
+      "gssCode": "E14001388",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Dorset",
+      "shortCode": "UKPARL.2025.WDS",
+      "gssCode": "E14001575",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bristol Central",
+      "shortCode": "UKPARL.2025.BSC",
+      "gssCode": "E14001131",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bristol South",
+      "shortCode": "UKPARL.2025.BSS",
+      "gssCode": "E14001135",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bristol East",
+      "shortCode": "UKPARL.2025.BSE",
+      "gssCode": "E14001132",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bristol North West",
+      "shortCode": "UKPARL.2025.BNW",
+      "gssCode": "E14001134",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bristol North East",
+      "shortCode": "UKPARL.2025.BNE",
+      "gssCode": "E14001133",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Filton and Bradley Stoke",
+      "shortCode": "UKPARL.2025.FBS",
+      "gssCode": "E14001237",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Thornbury and Yate",
+      "shortCode": "UKPARL.2025.TAY",
+      "gssCode": "E14001545",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North East Somerset and Hanham",
+      "shortCode": "UKPARL.2025.NES",
+      "gssCode": "E14001394",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bath",
+      "shortCode": "UKPARL.2025.BTH",
+      "gssCode": "E14001080",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Weston-super-Mare",
+      "shortCode": "UKPARL.2025.WSM",
+      "gssCode": "E14001581",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wells and Mendip Hills",
+      "shortCode": "UKPARL.2025.WEL",
+      "gssCode": "E14001572",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Somerset",
+      "shortCode": "UKPARL.2025.NSS",
+      "gssCode": "E14001399",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bridgwater",
+      "shortCode": "UKPARL.2025.BWT",
+      "gssCode": "E14001126",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Poole",
+      "shortCode": "UKPARL.2025.PLE",
+      "gssCode": "E14001429",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bournemouth West",
+      "shortCode": "UKPARL.2025.BHW",
+      "gssCode": "E14001116",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bournemouth East",
+      "shortCode": "UKPARL.2025.BHE",
+      "gssCode": "E14001115",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Christchurch",
+      "shortCode": "UKPARL.2025.CHR",
+      "gssCode": "E14001171",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tewkesbury",
+      "shortCode": "UKPARL.2025.TEW",
+      "gssCode": "E14001542",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Cotswolds",
+      "shortCode": "UKPARL.2025.NCT",
+      "gssCode": "E14001386",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cheltenham",
+      "shortCode": "UKPARL.2025.CNM",
+      "gssCode": "E14001161",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gloucester",
+      "shortCode": "UKPARL.2025.GLO",
+      "gssCode": "E14001248",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Forest of Dean",
+      "shortCode": "UKPARL.2025.FOD",
+      "gssCode": "E14001240",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stroud",
+      "shortCode": "UKPARL.2025.STR",
+      "gssCode": "E14001529",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Cotswolds",
+      "shortCode": "UKPARL.2025.SCT",
+      "gssCode": "E14001482",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Swindon North",
+      "shortCode": "UKPARL.2025.SNN",
+      "gssCode": "E14001536",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Swindon South",
+      "shortCode": "UKPARL.2025.SNS",
+      "gssCode": "E14001537",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Chippenham",
+      "shortCode": "UKPARL.2025.CPM",
+      "gssCode": "E14001168",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Melksham and Devizes",
+      "shortCode": "UKPARL.2025.MKM",
+      "gssCode": "E14001356",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Wiltshire",
+      "shortCode": "UKPARL.2025.EWT",
+      "gssCode": "E14001217",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Salisbury",
+      "shortCode": "UKPARL.2025.SAL",
+      "gssCode": "E14001460",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South West Wiltshire",
+      "shortCode": "UKPARL.2025.SWW",
+      "gssCode": "E14001498",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Yeovil",
+      "shortCode": "UKPARL.2025.YEO",
+      "gssCode": "E14001603",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Taunton and Wellington",
+      "shortCode": "UKPARL.2025.TAW",
+      "gssCode": "E14001540",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tiverton and Minehead",
+      "shortCode": "UKPARL.2025.TIV",
+      "gssCode": "E14001548",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Honiton and Sidmouth",
+      "shortCode": "UKPARL.2025.HNS",
+      "gssCode": "E14001291",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Exmouth and Exeter East",
+      "shortCode": "UKPARL.2025.EXM",
+      "gssCode": "E14001232",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Exeter",
+      "shortCode": "UKPARL.2025.EXT",
+      "gssCode": "E14001231",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newton Abbot",
+      "shortCode": "UKPARL.2025.NTA",
+      "gssCode": "E14001381",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Torbay",
+      "shortCode": "UKPARL.2025.TRB",
+      "gssCode": "E14001551",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Devon",
+      "shortCode": "UKPARL.2025.SDV",
+      "gssCode": "E14001484",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Plymouth Moor View",
+      "shortCode": "UKPARL.2025.PMV",
+      "gssCode": "E14001426",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Plymouth Sutton and Devonport",
+      "shortCode": "UKPARL.2025.PSD",
+      "gssCode": "E14001427",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Devon",
+      "shortCode": "UKPARL.2025.NDV",
+      "gssCode": "E14001387",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Torridge and Tavistock",
+      "shortCode": "UKPARL.2025.TAV",
+      "gssCode": "E14001552",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South West Devon",
+      "shortCode": "UKPARL.2025.SWD",
+      "gssCode": "E14001495",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Central Devon",
+      "shortCode": "UKPARL.2025.CDV",
+      "gssCode": "E14001155",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Cornwall",
+      "shortCode": "UKPARL.2025.NCR",
+      "gssCode": "E14001385",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South East Cornwall",
+      "shortCode": "UKPARL.2025.SEC",
+      "gssCode": "E14001486",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "St Austell and Newquay",
+      "shortCode": "UKPARL.2025.SNQ",
+      "gssCode": "E14001508",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Truro and Falmouth",
+      "shortCode": "UKPARL.2025.TRF",
+      "gssCode": "E14001554",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "St Ives",
+      "shortCode": "UKPARL.2025.STV",
+      "gssCode": "E14001511",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Camborne and Redruth",
+      "shortCode": "UKPARL.2025.CRR",
+      "gssCode": "E14001148",
+      "nation": "England",
+      "parliamentaryRegion": "South West",
+      "nhsRegion": "South West",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Perry Barr",
+      "shortCode": "UKPARL.2025.BPB",
+      "gssCode": "E14001098",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Erdington",
+      "shortCode": "UKPARL.2025.BER",
+      "gssCode": "E14001093",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kenilworth and Southam",
+      "shortCode": "UKPARL.2025.KLW",
+      "gssCode": "E14001309",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Warwick and Leamington",
+      "shortCode": "UKPARL.2025.WKL",
+      "gssCode": "E14001566",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Droitwich and Evesham",
+      "shortCode": "UKPARL.2025.DAE",
+      "gssCode": "E14001203",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rugby",
+      "shortCode": "UKPARL.2025.RUG",
+      "gssCode": "E14001453",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Nuneaton",
+      "shortCode": "UKPARL.2025.NUN",
+      "gssCode": "E14001413",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Warwickshire and Bedworth",
+      "shortCode": "UKPARL.2025.NWB",
+      "gssCode": "E14001400",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sutton Coldfield",
+      "shortCode": "UKPARL.2025.SUT",
+      "gssCode": "E14001535",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Hodge Hill and Solihull North",
+      "shortCode": "UKPARL.2025.BSN",
+      "gssCode": "E14001095",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Ladywood",
+      "shortCode": "UKPARL.2025.BLA",
+      "gssCode": "E14001096",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Edgbaston",
+      "shortCode": "UKPARL.2025.BEB",
+      "gssCode": "E14001092",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Northfield",
+      "shortCode": "UKPARL.2025.BNF",
+      "gssCode": "E14001097",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Selly Oak",
+      "shortCode": "UKPARL.2025.BSO",
+      "gssCode": "E14001099",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Hall Green and Moseley",
+      "shortCode": "UKPARL.2025.BHG",
+      "gssCode": "E14001094",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Birmingham Yardley",
+      "shortCode": "UKPARL.2025.BYA",
+      "gssCode": "E14001100",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Solihull West and Shirley",
+      "shortCode": "UKPARL.2025.SWS",
+      "gssCode": "E14001479",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hereford and South Herefordshire",
+      "shortCode": "UKPARL.2025.HRS",
+      "gssCode": "E14001281",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Worcestershire",
+      "shortCode": "UKPARL.2025.WWR",
+      "gssCode": "E14001579",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Worcester",
+      "shortCode": "UKPARL.2025.WOR",
+      "gssCode": "E14001597",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wyre Forest",
+      "shortCode": "UKPARL.2025.WYF",
+      "gssCode": "E14001601",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Redditch",
+      "shortCode": "UKPARL.2025.RDC",
+      "gssCode": "E14001441",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Coventry East",
+      "shortCode": "UKPARL.2025.CEA",
+      "gssCode": "E14001180",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Coventry North West",
+      "shortCode": "UKPARL.2025.CNW",
+      "gssCode": "E14001181",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Shropshire",
+      "shortCode": "UKPARL.2025.SSO",
+      "gssCode": "E14001493",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Shrewsbury",
+      "shortCode": "UKPARL.2025.SHR",
+      "gssCode": "E14001473",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Telford",
+      "shortCode": "UKPARL.2025.TFD",
+      "gssCode": "E14001541",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "The Wrekin",
+      "shortCode": "UKPARL.2025.WRK",
+      "gssCode": "E14001543",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Shropshire",
+      "shortCode": "UKPARL.2025.NSO",
+      "gssCode": "E14001398",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wolverhampton West",
+      "shortCode": "UKPARL.2025.WWE",
+      "gssCode": "E14001596",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aldridge-Brownhills",
+      "shortCode": "UKPARL.2025.ABH",
+      "gssCode": "E14001064",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Walsall and Bloxwich",
+      "shortCode": "UKPARL.2025.WAB",
+      "gssCode": "E14001562",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dudley",
+      "shortCode": "UKPARL.2025.DUD",
+      "gssCode": "E14001204",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Halesowen",
+      "shortCode": "UKPARL.2025.HAL",
+      "gssCode": "E14001261",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stourbridge",
+      "shortCode": "UKPARL.2025.SBR",
+      "gssCode": "E14001524",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Smethwick",
+      "shortCode": "UKPARL.2025.SMK",
+      "gssCode": "E14001478",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kingswinford and South Staffordshire",
+      "shortCode": "UKPARL.2025.KSS",
+      "gssCode": "E14001316",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tamworth",
+      "shortCode": "UKPARL.2025.TMW",
+      "gssCode": "E14001538",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lichfield",
+      "shortCode": "UKPARL.2025.LIC",
+      "gssCode": "E14001335",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Burton and Uttoxeter",
+      "shortCode": "UKPARL.2025.BAU",
+      "gssCode": "E14001143",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newcastle-under-Lyme",
+      "shortCode": "UKPARL.2025.NUL",
+      "gssCode": "E14001380",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Staffordshire Moorlands",
+      "shortCode": "UKPARL.2025.STM",
+      "gssCode": "E14001514",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stoke-on-Trent North",
+      "shortCode": "UKPARL.2025.STN",
+      "gssCode": "E14001521",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stoke-on-Trent Central",
+      "shortCode": "UKPARL.2025.STC",
+      "gssCode": "E14001520",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stoke-on-Trent South",
+      "shortCode": "UKPARL.2025.STS",
+      "gssCode": "E14001522",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cannock Chase",
+      "shortCode": "UKPARL.2025.CKC",
+      "gssCode": "E14001150",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stone, Great Wyrley and Penkridge",
+      "shortCode": "UKPARL.2025.SGW",
+      "gssCode": "E14001523",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stafford",
+      "shortCode": "UKPARL.2025.STF",
+      "gssCode": "E14001513",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wolverhampton North East",
+      "shortCode": "UKPARL.2025.WNE",
+      "gssCode": "E14001594",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wolverhampton South East",
+      "shortCode": "UKPARL.2025.WSE",
+      "gssCode": "E14001595",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Tipton and Wednesbury",
+      "shortCode": "UKPARL.2025.TIP",
+      "gssCode": "E14001547",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stratford-on-Avon",
+      "shortCode": "UKPARL.2025.SOA",
+      "gssCode": "E14001526",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Herefordshire",
+      "shortCode": "UKPARL.2025.NHR",
+      "gssCode": "E14001395",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Meriden and Solihull East",
+      "shortCode": "UKPARL.2025.MSE",
+      "gssCode": "E14001358",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Coventry South",
+      "shortCode": "UKPARL.2025.CSO",
+      "gssCode": "E14001182",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bromsgrove",
+      "shortCode": "UKPARL.2025.BRG",
+      "gssCode": "E14001138",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Bromwich",
+      "shortCode": "UKPARL.2025.WBW",
+      "gssCode": "E14001574",
+      "nation": "England",
+      "parliamentaryRegion": "West Midlands",
+      "nhsRegion": "Midlands",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Goole and Pocklington",
+      "shortCode": "UKPARL.2025.GAP",
+      "gssCode": "E14001250",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bridlington and The Wolds",
+      "shortCode": "UKPARL.2025.BRD",
+      "gssCode": "E14001127",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sheffield Hallam",
+      "shortCode": "UKPARL.2025.SHA",
+      "gssCode": "E14001468",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sheffield Central",
+      "shortCode": "UKPARL.2025.SCE",
+      "gssCode": "E14001467",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sheffield Brightside and Hillsborough",
+      "shortCode": "UKPARL.2025.SBH",
+      "gssCode": "E14001466",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sheffield Heeley",
+      "shortCode": "UKPARL.2025.SHE",
+      "gssCode": "E14001469",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Sheffield South East",
+      "shortCode": "UKPARL.2025.SSE",
+      "gssCode": "E14001470",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Penistone and Stocksbridge",
+      "shortCode": "UKPARL.2025.PAS",
+      "gssCode": "E14001423",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Barnsley North",
+      "shortCode": "UKPARL.2025.BNN",
+      "gssCode": "E14001074",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Barnsley South",
+      "shortCode": "UKPARL.2025.BNS",
+      "gssCode": "E14001075",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rawmarsh and Conisbrough",
+      "shortCode": "UKPARL.2025.RAC",
+      "gssCode": "E14001436",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rotherham",
+      "shortCode": "UKPARL.2025.RHM",
+      "gssCode": "E14001452",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rother Valley",
+      "shortCode": "UKPARL.2025.RHV",
+      "gssCode": "E14001451",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Doncaster Central",
+      "shortCode": "UKPARL.2025.DNC",
+      "gssCode": "E14001198",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Doncaster North",
+      "shortCode": "UKPARL.2025.DNN",
+      "gssCode": "E14001200",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Doncaster East and the Isle of Axholme",
+      "shortCode": "UKPARL.2025.DNE",
+      "gssCode": "E14001199",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Scunthorpe",
+      "shortCode": "UKPARL.2025.SCU",
+      "gssCode": "E14001462",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brigg and Immingham",
+      "shortCode": "UKPARL.2025.BIM",
+      "gssCode": "E14001128",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Great Grimsby and Cleethorpes",
+      "shortCode": "UKPARL.2025.GGC",
+      "gssCode": "E14001255",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kingston upon Hull West and Haltemprice",
+      "shortCode": "UKPARL.2025.HUW",
+      "gssCode": "E14001315",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kingston upon Hull North and Cottingham",
+      "shortCode": "UKPARL.2025.HUN",
+      "gssCode": "E14001314",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kingston upon Hull East",
+      "shortCode": "UKPARL.2025.HUE",
+      "gssCode": "E14001313",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Beverley and Holderness",
+      "shortCode": "UKPARL.2025.BEV",
+      "gssCode": "E14001087",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Selby",
+      "shortCode": "UKPARL.2025.SBY",
+      "gssCode": "E14001464",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wetherby and Easingwold",
+      "shortCode": "UKPARL.2025.WAE",
+      "gssCode": "E14001582",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Harrogate and Knaresborough",
+      "shortCode": "UKPARL.2025.HGK",
+      "gssCode": "E14001269",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Skipton and Ripon",
+      "shortCode": "UKPARL.2025.SAR",
+      "gssCode": "E14001475",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Richmond and Northallerton",
+      "shortCode": "UKPARL.2025.RAN",
+      "gssCode": "E14001444",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Thirsk and Malton",
+      "shortCode": "UKPARL.2025.TAM",
+      "gssCode": "E14001544",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Scarborough and Whitby",
+      "shortCode": "UKPARL.2025.SAW",
+      "gssCode": "E14001461",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "York Outer",
+      "shortCode": "UKPARL.2025.YOO",
+      "gssCode": "E14001605",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "York Central",
+      "shortCode": "UKPARL.2025.YOC",
+      "gssCode": "E14001604",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Pontefract, Castleford and Knottingley",
+      "shortCode": "UKPARL.2025.PCK",
+      "gssCode": "E14001428",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dewsbury and Batley",
+      "shortCode": "UKPARL.2025.DAB",
+      "gssCode": "E14001196",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Normanton and Hemsworth",
+      "shortCode": "UKPARL.2025.NAH",
+      "gssCode": "E14001383",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Halifax",
+      "shortCode": "UKPARL.2025.HFX",
+      "gssCode": "E14001262",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wakefield and Rothwell",
+      "shortCode": "UKPARL.2025.WKF",
+      "gssCode": "E14001560",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ossett and Denby Dale",
+      "shortCode": "UKPARL.2025.ODB",
+      "gssCode": "E14001418",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Colne Valley",
+      "shortCode": "UKPARL.2025.COV",
+      "gssCode": "E14001177",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Huddersfield",
+      "shortCode": "UKPARL.2025.HUD",
+      "gssCode": "E14001297",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Spen Valley",
+      "shortCode": "UKPARL.2025.SPV",
+      "gssCode": "E14001506",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Calder Valley",
+      "shortCode": "UKPARL.2025.CAV",
+      "gssCode": "E14001147",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Keighley and Ilkley",
+      "shortCode": "UKPARL.2025.KAI",
+      "gssCode": "E14001308",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bradford East",
+      "shortCode": "UKPARL.2025.BDE",
+      "gssCode": "E14001118",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Shipley",
+      "shortCode": "UKPARL.2025.SHY",
+      "gssCode": "E14001472",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds Central and Headingley",
+      "shortCode": "UKPARL.2025.LCH",
+      "gssCode": "E14001319",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bradford West",
+      "shortCode": "UKPARL.2025.BDW",
+      "gssCode": "E14001120",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bradford South",
+      "shortCode": "UKPARL.2025.BDS",
+      "gssCode": "E14001119",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds South West and Morley",
+      "shortCode": "UKPARL.2025.LSW",
+      "gssCode": "E14001324",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds West and Pudsey",
+      "shortCode": "UKPARL.2025.LWP",
+      "gssCode": "E14001325",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds North East",
+      "shortCode": "UKPARL.2025.LNE",
+      "gssCode": "E14001321",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds East",
+      "shortCode": "UKPARL.2025.LEA",
+      "gssCode": "E14001320",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds North West",
+      "shortCode": "UKPARL.2025.LNW",
+      "gssCode": "E14001322",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Leeds South",
+      "shortCode": "UKPARL.2025.LSO",
+      "gssCode": "E14001323",
+      "nation": "England",
+      "parliamentaryRegion": "Yorkshire and the Humber",
+      "nhsRegion": "North East and Yorkshire",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cities of London and Westminster",
+      "shortCode": "UKPARL.2025.CLW",
+      "gssCode": "E14001172",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hampstead and Highgate",
+      "shortCode": "UKPARL.2025.HAH",
+      "gssCode": "E14001265",
+      "nation": "England",
+      "parliamentaryRegion": "London",
+      "nhsRegion": "London",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Berwickshire, Roxburgh and Selkirk",
+      "shortCode": "UKPARL.2025.BRS",
+      "gssCode": "S14000108",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Arbroath and Broughty Ferry",
+      "shortCode": "UKPARL.2025.ABF",
+      "gssCode": "S14000066",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dunfermline and Dollar",
+      "shortCode": "UKPARL.2025.DFR",
+      "gssCode": "S14000076",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Airdrie and Shotts",
+      "shortCode": "UKPARL.2025.AAS",
+      "gssCode": "S14000063",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Kilbride and Strathaven",
+      "shortCode": "UKPARL.2025.EKS",
+      "gssCode": "S14000077",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Renfrewshire",
+      "shortCode": "UKPARL.2025.ERF",
+      "gssCode": "S14000021",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Edinburgh East and Musselburgh",
+      "shortCode": "UKPARL.2025.EEM",
+      "gssCode": "S14000078",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Edinburgh North and Leith",
+      "shortCode": "UKPARL.2025.ENL",
+      "gssCode": "S14000079",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Edinburgh South West",
+      "shortCode": "UKPARL.2025.ESW",
+      "gssCode": "S14000081",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Alloa and Grangemouth",
+      "shortCode": "UKPARL.2025.AAG",
+      "gssCode": "S14000064",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glasgow South West",
+      "shortCode": "UKPARL.2025.GSW",
+      "gssCode": "S14000088",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Inverclyde and Renfrewshire West",
+      "shortCode": "UKPARL.2025.IRW",
+      "gssCode": "S14000093",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Kilmarnock and Loudoun",
+      "shortCode": "UKPARL.2025.KAL",
+      "gssCode": "S14000110",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Livingston",
+      "shortCode": "UKPARL.2025.LVG",
+      "gssCode": "S14000095",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Midlothian",
+      "shortCode": "UKPARL.2025.MID",
+      "gssCode": "S14000045",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Motherwell, Wishaw and Carluke",
+      "shortCode": "UKPARL.2025.MWC",
+      "gssCode": "S14000099",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Paisley and Renfrewshire South",
+      "shortCode": "UKPARL.2025.PRS",
+      "gssCode": "S14000102",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Angus and Perthshire Glens",
+      "shortCode": "UKPARL.2025.APG",
+      "gssCode": "S14000065",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Stirling and Strathallan",
+      "shortCode": "UKPARL.2025.STG",
+      "gssCode": "S14000105",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Dunbartonshire",
+      "shortCode": "UKPARL.2025.WDB",
+      "gssCode": "S14000106",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Moray West, Nairn and Strathspey",
+      "shortCode": "UKPARL.2025.MNS",
+      "gssCode": "S14000098",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Argyll, Bute and South Lochaber",
+      "shortCode": "UKPARL.2025.ABL",
+      "gssCode": "S14000067",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Aberdeenshire and Kincardine",
+      "shortCode": "UKPARL.2025.WAK",
+      "gssCode": "S14000111",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gordon and Buchan",
+      "shortCode": "UKPARL.2025.GDB",
+      "gssCode": "S14000091",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cowdenbeath and Kirkcaldy",
+      "shortCode": "UKPARL.2025.CKY",
+      "gssCode": "S14000071",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aberdeen South",
+      "shortCode": "UKPARL.2025.ABS",
+      "gssCode": "S14000061",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Edinburgh West",
+      "shortCode": "UKPARL.2025.EWE",
+      "gssCode": "S14000082",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lothian East",
+      "shortCode": "UKPARL.2025.LOE",
+      "gssCode": "S14000096",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ayr, Carrick and Cumnock",
+      "shortCode": "UKPARL.2025.ACC",
+      "gssCode": "S14000107",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Central Ayrshire",
+      "shortCode": "UKPARL.2025.CAY",
+      "gssCode": "S14000109",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Orkney and Shetland",
+      "shortCode": "UKPARL.2025.OAS",
+      "gssCode": "S14000051",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Na h-Eileanan an Iar",
+      "shortCode": "UKPARL.2025.NHI",
+      "gssCode": "S14000027",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Ayrshire and Arran",
+      "shortCode": "UKPARL.2025.NAA",
+      "gssCode": "S14000048",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Perth and Kinross-shire",
+      "shortCode": "UKPARL.2025.PHK",
+      "gssCode": "S14000103",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dundee Central",
+      "shortCode": "UKPARL.2025.DUN",
+      "gssCode": "S14000075",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Falkirk",
+      "shortCode": "UKPARL.2025.FLK",
+      "gssCode": "S14000083",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bathgate and Linlithgow",
+      "shortCode": "UKPARL.2025.BAL",
+      "gssCode": "S14000068",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Inverness, Skye and West Ross-shire",
+      "shortCode": "UKPARL.2025.ISW",
+      "gssCode": "S14000094",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Edinburgh South",
+      "shortCode": "UKPARL.2025.ESO",
+      "gssCode": "S14000080",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dumfries and Galloway",
+      "shortCode": "UKPARL.2025.DAG",
+      "gssCode": "S14000073",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Paisley and Renfrewshire North",
+      "shortCode": "UKPARL.2025.PRN",
+      "gssCode": "S14000101",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aberdeenshire North and Moray East",
+      "shortCode": "UKPARL.2025.ABM",
+      "gssCode": "S14000062",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Caithness, Sutherland and Easter Ross",
+      "shortCode": "UKPARL.2025.CSR",
+      "gssCode": "S14000069",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glasgow East",
+      "shortCode": "UKPARL.2025.GEA",
+      "gssCode": "S14000084",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Dunbartonshire",
+      "shortCode": "UKPARL.2025.MDB",
+      "gssCode": "S14000097",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glasgow North",
+      "shortCode": "UKPARL.2025.GNO",
+      "gssCode": "S14000085",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glasgow South",
+      "shortCode": "UKPARL.2025.GSO",
+      "gssCode": "S14000087",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glasgow West",
+      "shortCode": "UKPARL.2025.GWE",
+      "gssCode": "S14000089",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cumbernauld and Kirkintilloch",
+      "shortCode": "UKPARL.2025.CKH",
+      "gssCode": "S14000072",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Coatbridge and Bellshill",
+      "shortCode": "UKPARL.2025.CAB",
+      "gssCode": "S14000070",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Hamilton and Clyde Valley",
+      "shortCode": "UKPARL.2025.HCV",
+      "gssCode": "S14000092",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rutherglen",
+      "shortCode": "UKPARL.2025.RGN",
+      "gssCode": "S14000104",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glasgow North East",
+      "shortCode": "UKPARL.2025.GNE",
+      "gssCode": "S14000086",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aberdeen North",
+      "shortCode": "UKPARL.2025.ABN",
+      "gssCode": "S14000060",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dumfriesshire, Clydesdale and Tweeddale",
+      "shortCode": "UKPARL.2025.DCT",
+      "gssCode": "S14000074",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North East Fife",
+      "shortCode": "UKPARL.2025.NEF",
+      "gssCode": "S14000100",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Glenrothes and Mid Fife",
+      "shortCode": "UKPARL.2025.GMF",
+      "gssCode": "S14000090",
+      "nation": "Scotland",
+      "parliamentaryRegion": "Scotland",
+      "nhsRegion": "Scotland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Aberafan Maesteg",
+      "shortCode": "UKPARL.2025.AFM",
+      "gssCode": "W07000081",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Alyn and Deeside",
+      "shortCode": "UKPARL.2025.AAD",
+      "gssCode": "W07000082",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bangor Aberconwy",
+      "shortCode": "UKPARL.2025.BGA",
+      "gssCode": "W07000083",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Blaenau Gwent and Rhymney",
+      "shortCode": "UKPARL.2025.BGR",
+      "gssCode": "W07000084",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Brecon, Radnor and Cwm Tawe",
+      "shortCode": "UKPARL.2025.BRC",
+      "gssCode": "W07000085",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Bridgend",
+      "shortCode": "UKPARL.2025.BGN",
+      "gssCode": "W07000086",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Caerfyrddin",
+      "shortCode": "UKPARL.2025.CAN",
+      "gssCode": "W07000087",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Caerphilly",
+      "shortCode": "UKPARL.2025.CAE",
+      "gssCode": "W07000088",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cardiff East",
+      "shortCode": "UKPARL.2025.CFE",
+      "gssCode": "W07000089",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cardiff North",
+      "shortCode": "UKPARL.2025.CFN",
+      "gssCode": "W07000090",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cardiff South and Penarth",
+      "shortCode": "UKPARL.2025.CFP",
+      "gssCode": "W07000091",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Cardiff West",
+      "shortCode": "UKPARL.2025.CFW",
+      "gssCode": "W07000092",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ceredigion Preseli",
+      "shortCode": "UKPARL.2025.CDP",
+      "gssCode": "W07000093",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Clwyd East",
+      "shortCode": "UKPARL.2025.CLE",
+      "gssCode": "W07000094",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Clwyd North",
+      "shortCode": "UKPARL.2025.CLN",
+      "gssCode": "W07000095",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Dwyfor Meirionnydd",
+      "shortCode": "UKPARL.2025.DMD",
+      "gssCode": "W07000096",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Gower",
+      "shortCode": "UKPARL.2025.GWR",
+      "gssCode": "W07000097",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Llanelli",
+      "shortCode": "UKPARL.2025.LLE",
+      "gssCode": "W07000098",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Merthyr Tydfil and Aberdare",
+      "shortCode": "UKPARL.2025.MTA",
+      "gssCode": "W07000099",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid and South Pembrokeshire",
+      "shortCode": "UKPARL.2025.MSP",
+      "gssCode": "W07000100",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Monmouthshire",
+      "shortCode": "UKPARL.2025.MMS",
+      "gssCode": "W07000101",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Montgomeryshire and Glyndŵr",
+      "shortCode": "UKPARL.2025.MAG",
+      "gssCode": "W07000102",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Neath and Swansea East",
+      "shortCode": "UKPARL.2025.NSW",
+      "gssCode": "W07000103",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newport East",
+      "shortCode": "UKPARL.2025.NPE",
+      "gssCode": "W07000104",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newport West and Islwyn",
+      "shortCode": "UKPARL.2025.NPI",
+      "gssCode": "W07000105",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Pontypridd",
+      "shortCode": "UKPARL.2025.PPD",
+      "gssCode": "W07000106",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Rhondda and Ogmore",
+      "shortCode": "UKPARL.2025.RAO",
+      "gssCode": "W07000107",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Swansea West",
+      "shortCode": "UKPARL.2025.SWT",
+      "gssCode": "W07000108",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Torfaen",
+      "shortCode": "UKPARL.2025.TOR",
+      "gssCode": "W07000109",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Vale of Glamorgan",
+      "shortCode": "UKPARL.2025.VOG",
+      "gssCode": "W07000110",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Wrexham",
+      "shortCode": "UKPARL.2025.WRE",
+      "gssCode": "W07000111",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Ynys Môn",
+      "shortCode": "UKPARL.2025.YNM",
+      "gssCode": "W07000112",
+      "nation": "Wales",
+      "parliamentaryRegion": "Wales",
+      "nhsRegion": "Wales",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Antrim",
+      "shortCode": "UKPARL.2025.EAN",
+      "gssCode": "N05000005",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Antrim",
+      "shortCode": "UKPARL.2025.SAN",
+      "gssCode": "N05000014",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Lagan Valley",
+      "shortCode": "UKPARL.2025.LGV",
+      "gssCode": "N05000009",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Upper Bann",
+      "shortCode": "UKPARL.2025.UBN",
+      "gssCode": "N05000017",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Belfast North",
+      "shortCode": "UKPARL.2025.BTN",
+      "gssCode": "N05000002",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "East Londonderry",
+      "shortCode": "UKPARL.2025.ELD",
+      "gssCode": "N05000006",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "West Tyrone",
+      "shortCode": "UKPARL.2025.WTY",
+      "gssCode": "N05000018",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Foyle",
+      "shortCode": "UKPARL.2025.FOY",
+      "gssCode": "N05000008",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Antrim",
+      "shortCode": "UKPARL.2025.NAN",
+      "gssCode": "N05000012",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Mid Ulster",
+      "shortCode": "UKPARL.2025.MUL",
+      "gssCode": "N05000010",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Fermanagh and South Tyrone",
+      "shortCode": "UKPARL.2025.FST",
+      "gssCode": "N05000007",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "South Down",
+      "shortCode": "UKPARL.2025.SDW",
+      "gssCode": "N05000015",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "North Down",
+      "shortCode": "UKPARL.2025.NDW",
+      "gssCode": "N05000013",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Strangford",
+      "shortCode": "UKPARL.2025.SGF",
+      "gssCode": "N05000016",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Belfast East",
+      "shortCode": "UKPARL.2025.BTE",
+      "gssCode": "N05000001",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Belfast West",
+      "shortCode": "UKPARL.2025.BTW",
+      "gssCode": "N05000004",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Belfast South and Mid Down",
+      "shortCode": "UKPARL.2025.BTS",
+      "gssCode": "N05000003",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    },
+    {
+      "name": "Newry and Armagh",
+      "shortCode": "UKPARL.2025.NAR",
+      "gssCode": "N05000011",
+      "nation": "Northern Ireland",
+      "parliamentaryRegion": "Northern Ireland",
+      "nhsRegion": "Northern Ireland",
+      "sourceBoundary": "2024"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commons PQ Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=commons-1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand-group">
+          <a class="brand" href="./">Commons PQ Dashboard</a>
+          <span>House of Commons</span>
+        </div>
+        <div id="data-status" class="data-status-bar">Loading...</div>
+        <div class="refresh-widget">
+          <button id="today-filter" class="btn-today" type="button" hidden></button>
+          <a class="btn-refresh" href="https://github.com/domducsutcliffe/dhpq/actions/workflows/refresh-data.yml" target="_blank" title="Trigger manual dataset refresh on GitHub">
+            <svg class="refresh-svg" viewBox="0 0 24 24" width="12" height="12">
+              <path fill="currentColor" d="M19 12a7 7 0 0 1-7 7c-2.4 0-4.5-1.2-5.7-3H9V14H3v6h2v-2.7c1.7 2.2 4.4 3.7 7.5 3.7a9 9 0 0 0 9-9h-2M5 12a7 7 0 0 1 7-7c2.4 0 4.5 1.2 5.7 3H15v2h6V4h-2v2.7C17.3 4.5 14.6 3 11.5 3a9 9 0 0 0-9 9h2z"/>
+            </svg>
+            <span>REFRESH</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+
+      <section class="metrics" aria-label="Summary metrics">
+        <article class="metric">
+          <span id="metric-total-label">Total PQs</span>
+          <strong id="metric-total">-</strong>
+        </article>
+        <article class="metric">
+          <span>Answered / unanswered</span>
+          <strong id="metric-answered">-</strong>
+        </article>
+        <article class="metric">
+          <span>Latest tabled</span>
+          <strong id="metric-latest">-</strong>
+        </article>
+        <article class="metric">
+          <span>Most active party</span>
+          <strong id="metric-party">-</strong>
+        </article>
+        <article class="metric">
+          <span>Most active region</span>
+          <strong id="metric-region">-</strong>
+        </article>
+      </section>
+
+      <section class="controls" aria-label="Dashboard filters">
+        <label class="search-label" for="search">Search UIN or keyword</label>
+        <input id="search" type="search" autocomplete="off" />
+        <div class="scope-row">
+          <label class="search-scope"><input id="search-question-only" type="checkbox" checked /> Search question text only</label>
+          <label class="short-mode" title="Drop the &quot;To ask the Secretary of State…&quot; opening from each question in the table"><input id="short-mode" type="checkbox" /> Short mode</label>
+        </div>
+        <select id="party-filter" aria-label="Party filter">
+          <option value="">All parties</option>
+        </select>
+        <select id="region-filter" aria-label="NHS region filter">
+          <option value="">All NHS regions</option>
+        </select>
+        <select id="answer-filter" aria-label="Answer status filter">
+          <option value="">All answer states</option>
+          <option value="answered">Answered</option>
+          <option value="unanswered">Unanswered</option>
+        </select>
+        <button id="reset-filters" class="btn-reset" type="button">Reset Filters</button>
+      </section>
+
+      <section class="charts" aria-label="Dashboard charts">
+        <article class="panel">
+          <div class="panel-head">
+            <h2 id="volume-title">Volume</h2>
+            <span id="monthly-range"></span>
+          </div>
+          <div id="monthly-chart" class="chart chart-line"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Subjects <span class="beta-badge" title="Subjects are derived from Parliament's own PQ headings (the part before the colon, e.g. 'GP Practice Lists: Registration'). Headings are assigned a few days after tabling, so the newest questions sit under 'Awaiting heading' until Parliament publishes theirs — treat these buckets as indicative.">BETA</span></h2>
+            <span>from PQ headings</span>
+          </div>
+          <div id="theme-chart" class="chart chart-bars"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Parties</h2>
+            <span>absolute volume</span>
+          </div>
+          <div id="party-chart" class="chart chart-bars"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head">
+            <h2>NHS regions</h2>
+            <span>relative to leader</span>
+          </div>
+          <div id="region-chart" class="chart chart-bars"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Questions</h2>
+          <div class="panel-head-actions">
+            <span id="results-count">-</span>
+            <button id="export-xlsx" class="btn-export" type="button" title="Download the questions currently in scope — with full answers — as an Excel file">
+              <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              <span class="btn-export-label">Export to Excel</span>
+            </button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>UIN</th>
+                <th>Tabled</th>
+                <th>Due</th>
+                <th>Member</th>
+                <th>Constituency</th>
+                <th>NHS region</th>
+                <th>Heading</th>
+              </tr>
+            </thead>
+            <tbody id="question-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div id="fulltext-progress" class="fulltext-progress" hidden></div>
+      <footer class="data-footer" id="data-footer"></footer>
+    </main>
+
+    <div id="chart-tooltip" class="chart-tooltip" style="opacity: 0; pointer-events: none; position: absolute; z-index: 1000;"></div>
+    <div id="answer-tooltip" class="answer-tooltip" role="tooltip"></div>
+    <div id="similar-panel" class="similar-panel" role="dialog" aria-label="Similar questions" hidden></div>
+    <script src="scripts/app.js?v=commons-1" type="module"></script>
+  </body>
+</html>

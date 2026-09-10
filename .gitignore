@@ -1,0 +1,3 @@
+# Plaintext data files — only encrypted .enc versions are committed
+data/commons/questions.json
+data/commons/summary.json

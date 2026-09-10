@@ -1,0 +1,66 @@
+name: Deploy to GitHub Pages
+
+# Publishes the site to GitHub Pages ourselves (instead of the built-in legacy
+# deploy) so we can auto-retry the occasional transient
+# "Deployment failed, try again later" error from GitHub's Pages backend.
+on:
+  push:
+    branches: [main]
+  # Also deploy after the scheduled data refresh commits new data (its commit is
+  # made with GITHUB_TOKEN and so does not itself trigger the push event above).
+  workflow_run:
+    workflows: ["Refresh PQ data"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel an in-progress publish.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy1.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        # Turns Pages on for the repo if it isn't already, so a fresh repo publishes on
+        # the first run without anyone opening Settings.
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # GitHub's Pages deploy step intermittently fails with a transient
+      # "Deployment failed, try again later" — retry up to three times.
+      - name: Deploy to GitHub Pages (attempt 1)
+        id: deploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before retry
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 20
+
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before final retry
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 45
+
+      - name: Deploy to GitHub Pages (attempt 3)
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
