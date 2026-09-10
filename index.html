@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=commons-1" />
+    <link rel="stylesheet" href="styles.css?v=commons-2" />
   </head>
   <body>
     <header class="topbar">
@@ -19,6 +19,7 @@
         <div id="data-status" class="data-status-bar">Loading...</div>
         <div class="refresh-widget">
           <button id="today-filter" class="btn-today" type="button" hidden></button>
+          <button id="filter-3days" class="btn-today" type="button" hidden></button>
           <a class="btn-refresh" href="https://github.com/domducsutcliffe/dhpq/actions/workflows/refresh-data.yml" target="_blank" title="Trigger manual dataset refresh on GitHub">
             <svg class="refresh-svg" viewBox="0 0 24 24" width="12" height="12">
               <path fill="currentColor" d="M19 12a7 7 0 0 1-7 7c-2.4 0-4.5-1.2-5.7-3H9V14H3v6h2v-2.7c1.7 2.2 4.4 3.7 7.5 3.7a9 9 0 0 0 9-9h-2M5 12a7 7 0 0 1 7-7c2.4 0 4.5 1.2 5.7 3H15v2h6V4h-2v2.7C17.3 4.5 14.6 3 11.5 3a9 9 0 0 0-9 9h2z"/>
@@ -76,30 +77,34 @@
       </section>
 
       <section class="charts" aria-label="Dashboard charts">
-        <article class="panel">
+        <article class="panel collapsible collapsed">
           <div class="panel-head">
-            <h2 id="volume-title">Volume</h2>
+            <h2><button class="panel-toggle" type="button" aria-expanded="false"
+              aria-controls="monthly-chart"><span class="chev" aria-hidden="true"></span><span id="volume-title">Volume</span></button></h2>
             <span id="monthly-range"></span>
           </div>
           <div id="monthly-chart" class="chart chart-line"></div>
         </article>
-        <article class="panel">
+        <article class="panel collapsible collapsed">
           <div class="panel-head">
-            <h2>Subjects <span class="beta-badge" title="Subjects are derived from Parliament's own PQ headings (the part before the colon, e.g. 'GP Practice Lists: Registration'). Headings are assigned a few days after tabling, so the newest questions sit under 'Awaiting heading' until Parliament publishes theirs — treat these buckets as indicative.">BETA</span></h2>
+            <h2><button class="panel-toggle" type="button" aria-expanded="false"
+              aria-controls="theme-chart"><span class="chev" aria-hidden="true"></span>Subjects</button> <span class="beta-badge" title="Subjects are derived from Parliament's own PQ headings (the part before the colon, e.g. 'GP Practice Lists: Registration'). Headings are assigned a few days after tabling, so the newest questions sit under 'Awaiting heading' until Parliament publishes theirs — treat these buckets as indicative.">BETA</span></h2>
             <span>from PQ headings</span>
           </div>
           <div id="theme-chart" class="chart chart-bars"></div>
         </article>
-        <article class="panel">
+        <article class="panel collapsible collapsed">
           <div class="panel-head">
-            <h2>Parties</h2>
+            <h2><button class="panel-toggle" type="button" aria-expanded="false"
+              aria-controls="party-chart"><span class="chev" aria-hidden="true"></span>Parties</button></h2>
             <span>absolute volume</span>
           </div>
           <div id="party-chart" class="chart chart-bars"></div>
         </article>
-        <article class="panel">
+        <article class="panel collapsible collapsed">
           <div class="panel-head">
-            <h2>NHS regions</h2>
+            <h2><button class="panel-toggle" type="button" aria-expanded="false"
+              aria-controls="region-chart"><span class="chev" aria-hidden="true"></span>NHS regions</button></h2>
             <span>relative to leader</span>
           </div>
           <div id="region-chart" class="chart chart-bars"></div>
@@ -142,6 +147,6 @@
     <div id="chart-tooltip" class="chart-tooltip" style="opacity: 0; pointer-events: none; position: absolute; z-index: 1000;"></div>
     <div id="answer-tooltip" class="answer-tooltip" role="tooltip"></div>
     <div id="similar-panel" class="similar-panel" role="dialog" aria-label="Similar questions" hidden></div>
-    <script src="scripts/app.js?v=commons-1" type="module"></script>
+    <script src="scripts/app.js?v=commons-2" type="module"></script>
   </body>
 </html>

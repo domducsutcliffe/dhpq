@@ -1264,3 +1264,56 @@ table th {
 }
 
 .similar-empty { padding: 12px 10px; color: var(--muted); }
+
+/* ── Collapsible chart panels ────────────────────────────────────────────────
+   Collapsed on load so the questions table sits near the top of the viewport.
+   The heads stay visible, so the four boxes still read as a row of charts. */
+.panel-toggle {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 0;
+  width: auto;
+}
+
+.panel-toggle:hover {
+  color: var(--orange);
+}
+
+.panel-toggle .chev {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid currentColor;
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid transparent;
+  transform: rotate(90deg);
+  transition: transform 0.15s;
+}
+
+.collapsible.collapsed .panel-toggle .chev {
+  transform: rotate(0deg);
+}
+
+.collapsible.collapsed .chart {
+  display: none;
+}
+
+/* Collapsed, a panel is just its head — let the grid rows shrink to that height
+   instead of leaving four tall empty boxes. */
+.charts {
+  align-items: start;
+}
+
+.panel-toggle:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
