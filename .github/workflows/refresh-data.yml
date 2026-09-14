@@ -33,6 +33,19 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
+      # Without the password the refresh can't decrypt the previous dataset, so it falls
+      # back to a full rebuild — ~23,900 questions off the Parliament API, up to 20
+      # minutes — and only then dies at the encrypt step. Check first: five seconds, and
+      # the log says what is actually wrong.
+      - name: Check the encryption password is configured
+        env:
+          PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
+        run: |
+          if [ -z "$PQ_PASSWORD" ]; then
+            echo "::error::The PQ_PASSWORD repository secret is not set, so the refreshed data could not be encrypted or committed. Add it under Settings → Secrets and variables → Actions; it must match the password the committed .enc files were encrypted with."
+            exit 1
+          fi
+          echo "PQ_PASSWORD is set."
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
