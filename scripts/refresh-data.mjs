@@ -440,17 +440,30 @@ async function fetchText(url) {
 // repo — the plaintext is gitignored and encrypt-data.mjs deletes the single
 // questions.json.enc — so without this a CI run finds no previous data at all and
 // silently discards every full-text repair from earlier runs.
+// Set when a committed dataset exists but this run could not read it (no password,
+// wrong password, a corrupt chunk). That is very different from "there is no previous
+// data": carrying on would silently re-fetch the whole window and overwrite good data,
+// so main() refuses to rebuild unless --full says that is really what is wanted.
+let previousLoadFailure = null;
+
 async function loadChunkedQuestions() {
-  const password = process.env.PQ_PASSWORD;
-  if (!password) return null;
   let index;
   try {
     index = JSON.parse(await readFile(path.join(verticalDir, "questions-index.json"), "utf8"));
   } catch {
-    return null;
+    return null; // no chunked dataset committed — a genuine first run
   }
   const chunks = Number(index.chunks || 0);
   if (!chunks) return null;
+
+  const password = process.env.PQ_PASSWORD;
+  if (!password) {
+    previousLoadFailure =
+      `${chunks} encrypted question chunk(s) are committed but PQ_PASSWORD is not set, ` +
+      "so the previous dataset could not be decrypted.";
+    return null;
+  }
+
   const all = [];
   for (let i = 0; i < chunks; i += 1) {
     try {
@@ -458,8 +471,10 @@ async function loadChunkedQuestions() {
       const parsed = JSON.parse(decryptContainer(buf, password));
       all.push(...(parsed.questions || parsed || []));
     } catch (error) {
-      console.warn(`Could not read questions chunk ${i}: ${error.message}`);
-      return null; // a partial read would look like deleted questions — safer to bail
+      // a partial read would look like deleted questions — safer to bail
+      previousLoadFailure = `Could not read questions chunk ${i}: ${error.message}`;
+      console.warn(previousLoadFailure);
+      return null;
     }
   }
   return all;
@@ -1167,6 +1182,7 @@ async function main() {
   if (process.argv.includes("--enrich-only")) {
     const existing = await loadPreviousQuestions();
     if (!existing.length) {
+      if (previousLoadFailure) throw new Error(`Enrich-only: ${previousLoadFailure}`);
       console.log("Enrich-only: no existing questions.json found, nothing to do.");
       return;
     }
@@ -1231,6 +1247,17 @@ async function main() {
       `Refreshed ${fetched.length} recent questions (${added} new). Total: ${questions.length.toLocaleString()}`,
     );
   } else {
+    // Refuse to rebuild the whole window behind the operator's back. If a dataset is
+    // committed and we simply could not open it, a "full rebuild" is a data-loss event
+    // dressed up as a refresh: it re-fetches ~27 months for nothing, drops every
+    // enriched full text, and hides the real problem (usually a missing secret).
+    if (previousLoadFailure && !forceFull) {
+      throw new Error(
+        `${previousLoadFailure} Refusing to rebuild the whole window from scratch — fix the ` +
+          "cause (usually the PQ_PASSWORD secret) and re-run, or pass --full if a complete " +
+          "rebuild really is intended.",
+      );
+    }
     console.log(
       `Fetching every ${VERTICAL.answeringBodyLabel} question tabled since ${windowStart}, month by month...`,
     );
