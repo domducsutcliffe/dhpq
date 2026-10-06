@@ -127,7 +127,7 @@ if (document.readyState === "loading") {
 }
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { DEFAULT_VERTICAL_ID, getVertical } from "../config.js?v=commons-1";
+import { DEFAULT_VERTICAL_ID, getVertical, questionHouse, isCommonsQuestion } from "../config.js?v=both-houses-1";
 
 const VERTICAL = getVertical(DEFAULT_VERTICAL_ID);
 
@@ -234,6 +234,7 @@ const state = {
   questions: [],
   summary: null,
   query: "",
+  house: "",
   party: "",
   region: "",
   answer: "",
@@ -296,6 +297,7 @@ const elements = {
   search: document.querySelector("#search"),
   searchQuestionOnly: document.querySelector("#search-question-only"),
   shortMode: document.querySelector("#short-mode"),
+  houseFilter: document.querySelector("#house-filter"),
   partyFilter: document.querySelector("#party-filter"),
   regionFilter: document.querySelector("#region-filter"),
   answerFilter: document.querySelector("#answer-filter"),
@@ -397,6 +399,7 @@ function countBy(items, getKey) {
 function isFiltered() {
   return Boolean(
     state.query.trim() ||
+      state.house ||
       state.party ||
       state.region ||
       state.answer ||
@@ -515,10 +518,11 @@ function buildQueryMatchers(query) {
 
 function getFilteredQuestions(excludeBucket = false, excludeTopic = false, excludeParty = false, excludeRegion = false) {
   const query = state.query.trim().toLowerCase();
-  const exactUin = query.match(/^(?:uin:?\s*)?(\d{2,})$/)?.[1] || "";
+  const exactUin = query.match(/^(?:uin:?\s*)?((?:hl)?\d{2,})$/i)?.[1] || "";
   const queryMatchers = query ? buildQueryMatchers(query) : [];
 
   return getScopedQuestions().filter((question) => {
+    if (state.house && questionHouse(question) !== state.house) return false;
     if (!excludeParty && state.party) {
       const party = question.member.partyAbbreviation || question.member.party || "Unknown";
       if (party !== state.party) return false;
@@ -529,7 +533,7 @@ function getFilteredQuestions(excludeBucket = false, excludeTopic = false, exclu
     if (state.answer === "unanswered" && question.answered) return false;
 
     if (exactUin) {
-      return String(question.uin || "") === exactUin;
+      return String(question.uin || "").toLowerCase() === exactUin.toLowerCase();
     }
 
     if (query) {
@@ -591,7 +595,7 @@ function renderMetrics(items) {
   // Filtered, the tiles have to describe the filtered set, so they are counted here —
   // over whatever has loaded, which is the same set the table and charts are showing.
   const partyCounts = countBy(items, (question) => question.member.partyAbbreviation || question.member.party);
-  const regionCounts = countBy(items, (question) => question.region.nhsRegion);
+  const regionCounts = countBy(items.filter(isCommonsQuestion), (question) => question.region.nhsRegion);
   const answered = items.filter((question) => question.answered).length;
   const newest = items.map((question) => question.dateTabled).filter(Boolean).sort().at(-1);
 
@@ -617,6 +621,7 @@ function renderScopeStatus(filteredCount) {
     : `tabled since ${shortDate(state.summary.window?.startsOn || state.summary.dateRange.oldestTabled)}`;
 
   const filterParts = [];
+  if (state.house) filterParts.push(`House of ${escapeHtml(state.house)}`);
   if (state.selectedTopic) {
     filterParts.push(`topic "${escapeHtml(state.selectedTopic)}"`);
   }
@@ -647,9 +652,10 @@ function renderScopeStatus(filteredCount) {
 
   elements.status.innerHTML = statusText;
 
-  let footerText = `Every ${VERTICAL.house} written question in scope, tabled between ${shortDate(
+  let footerText = `Every ${(VERTICAL.houses || [VERTICAL.house]).join(" and ")} written question in scope, tabled between ${shortDate(
     state.summary.dateRange.oldestTabled,
   )} and ${shortDate(state.summary.dateRange.newestTabled)} — no keyword filter.`;
+  footerText += " NHS-region statistics cover Commons questions only; Lords members have no constituency.";
   const unheaded = state.summary.totals.unheaded || 0;
   if (unheaded) {
     footerText += ` Parliament assigns subject headings a few days after tabling, so ${formatNumber.format(
@@ -683,6 +689,8 @@ function renderScopeStatus(filteredCount) {
       state.selectedBucket = "";
       state.selectedTopic = "";
       state.tabledSince = "";
+      state.house = "";
+      elements.houseFilter.value = "";
       state.party = "";
       state.region = "";
       elements.partyFilter.value = "";
@@ -695,7 +703,7 @@ function renderScopeStatus(filteredCount) {
 function renderSelects() {
   const scoped = getScopedQuestions();
   const parties = countBy(scoped, (question) => question.member.partyAbbreviation || question.member.party);
-  const regions = countBy(scoped, (question) => question.region.nhsRegion);
+  const regions = countBy(scoped.filter(isCommonsQuestion), (question) => question.region.nhsRegion);
 
   const partyStillPresent = !state.party || parties.some((party) => party.key === state.party);
   const regionStillPresent = !state.region || regions.some((region) => region.key === state.region);
@@ -973,11 +981,11 @@ function renderTable(items) {
 
         return `
           <tr>
-            <td><a href="${escapeHtml(question.url)}">${escapeHtml(question.uin)}</a></td>
+            <td><a href="${escapeHtml(question.url)}">${escapeHtml(question.uin)}</a><br><small>${escapeHtml(questionHouse(question))}</small></td>
             <td style="white-space: nowrap;">${tabledHtml}</td>
             <td style="white-space: nowrap;">${dueCellHtml}</td>
             <td><span class="party-dot" title="${escapeHtml(question.member.party || question.member.partyAbbreviation || "Unknown")}">${partyEmoji(question)}</span> ${filterLink(question.member.name)}</td>
-            <td>${filterLink(question.member.constituency)}</td>
+            <td>${isCommonsQuestion(question) ? filterLink(question.member.constituency) : "—"}</td>
             <td>${escapeHtml(question.region.nhsRegion || "-")}</td>
             <td class="question-cell">
               <button class="row-menu" type="button" data-row-menu="${escapeHtml(String(question.id))}" title="More — find similar questions" aria-label="Row actions">☰</button>
@@ -1591,6 +1599,7 @@ function exportRow(q, todayStr) {
   const overdue = !q.answered && q.dateForAnswer && q.dateForAnswer < todayStr;
   return {
     UIN: q.uin || "",
+    House: questionHouse(q),
     "Date tabled": q.dateTabled || "",
     "Date due": q.dateForAnswer || "",
     "Date answered": q.dateAnswered || "",
@@ -1623,6 +1632,7 @@ function exportSlug(value) {
 function exportScopeSlug() {
   const parts = [
     state.selectedTopic,
+    state.house,
     state.party,
     state.region,
     state.answer,
@@ -1643,6 +1653,7 @@ function exportScopeDescription() {
     );
   }
   if (state.selectedTopic) parts.push(`subject: ${state.selectedTopic}`);
+  if (state.house) parts.push(`house: ${state.house}`);
   if (state.party) parts.push(`party: ${state.party}`);
   if (state.region) parts.push(`NHS region: ${state.region}`);
   if (state.answer) parts.push(`answer status: ${state.answer}`);
@@ -1665,11 +1676,11 @@ function buildExportWorkbook(XLSX, rows) {
 
   const ws = XLSX.utils.json_to_sheet(dataRows);
   // Column widths, in the key order of exportRow().
-  ws["!cols"] = [8, 12, 12, 12, 11, 8, 10, 22, 22, 8, 26, 14, 22, 30, 60, 90, 9, 46].map((wch) => ({
+  ws["!cols"] = [8, 12, 12, 12, 12, 11, 8, 10, 22, 22, 8, 26, 14, 22, 30, 60, 90, 9, 46].map((wch) => ({
     wch,
   }));
   ws["!autofilter"] = {
-    ref: XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: dataRows.length, c: 17 } }),
+    ref: XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: dataRows.length, c: 18 } }),
   };
 
   const answered = rows.filter((q) => q.answered).length;
@@ -1682,7 +1693,7 @@ function buildExportWorkbook(XLSX, rows) {
     ["Answered / unanswered", `${answered} / ${rows.length - answered}`],
     [],
     ["Source", "UK Parliament Written Questions API (questions-statements-api.parliament.uk)"],
-    ["Source scope", `${VERTICAL.house} written questions, answering body ${VERTICAL.answeringBodies}`],
+    ["Source scope", `${(VERTICAL.houses || [VERTICAL.house]).join(" and ")} written questions, answering body ${VERTICAL.answeringBodies}`],
     [
       "Note on answers",
       "Full answer text is fetched from Parliament's per-question detail endpoint at export time. Where a fetch did not succeed, the stored ~250-character extract is used instead — see the 'Answer complete' column.",
@@ -1726,7 +1737,7 @@ async function exportInScopeToXlsx() {
 
     setExportBusy(true, "Building file…");
     const { wb, todayStr } = buildExportWorkbook(XLSX, rows);
-    XLSX.writeFile(wb, `commons-pqs_${exportScopeSlug()}_${todayStr}.xlsx`);
+    XLSX.writeFile(wb, `dhsc-pqs_${exportScopeSlug()}_${todayStr}.xlsx`);
 
     setExportBusy(false, "Exported ✓");
     setTimeout(() => setExportBusy(false, "Export to Excel"), 2500);
@@ -1869,7 +1880,7 @@ function render() {
     snpFloor: true,
     selectedKey: state.party
   });
-  renderBars(elements.regionChart, countBy(regionChartFiltered, (question) => question.region.nhsRegion), {
+  renderBars(elements.regionChart, countBy(regionChartFiltered.filter(isCommonsQuestion), (question) => question.region.nhsRegion), {
     limit: 12,
     selectedKey: state.region
   });
@@ -2021,6 +2032,11 @@ if (elements.searchQuestionOnly) {
 
 
 
+elements.houseFilter.addEventListener("change", (event) => {
+  state.house = event.target.value;
+  render();
+});
+
 elements.partyFilter.addEventListener("change", (event) => {
   state.party = event.target.value;
   render();
@@ -2118,6 +2134,8 @@ if (elements.shortMode) {
 }
 
 elements.resetFilters.addEventListener("click", () => {
+  state.house = "";
+  elements.houseFilter.value = "";
   state.query = "";
   state.party = "";
   state.region = "";
@@ -2258,6 +2276,7 @@ document.addEventListener("click", (event) => {
   const isInsideChart = elements.monthlyChart.contains(event.target);
   const isInsideFilterControl =
     (elements.search && elements.search.contains(event.target)) ||
+    (elements.houseFilter && elements.houseFilter.contains(event.target)) ||
     (elements.partyFilter && elements.partyFilter.contains(event.target)) ||
     (elements.regionFilter && elements.regionFilter.contains(event.target)) ||
     (elements.answerFilter && elements.answerFilter.contains(event.target)) ||
@@ -2333,5 +2352,6 @@ loadData()
     console.error(error);
     elements.status.textContent = "Could not load dashboard data from this repo.";
   });
+
 
 

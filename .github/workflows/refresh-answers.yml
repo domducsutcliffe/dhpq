@@ -1,22 +1,10 @@
-name: Refresh PQ data
+name: Refresh older PQ answers
 
 on:
   workflow_dispatch:
-  # Validate refresh fixes immediately; generated data commits do not match.
-  push:
-    branches: [main]
-    paths:
-      - scripts/refresh-data.mjs
-      - scripts/refresh-plan.mjs
-      - scripts/refresh-data.test.mjs
-      - scripts/encrypt-data.mjs
-      - config.js
-      - .github/workflows/refresh-data.yml
-  schedule:
-    # 06:00 UK time every day, following GMT/BST automatically.
-    # GitHub may queue scheduled runs later during periods of high load.
-    - cron: "0 6 * * *"
-      timezone: "Europe/London"
+  workflow_run:
+    workflows: ["Refresh PQ data"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -28,8 +16,9 @@ concurrency:
 
 jobs:
   refresh:
-    name: New questions and their answers (priority)
-    timeout-minutes: 25
+    name: Answers to older questions and historical house catch-up
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    timeout-minutes: 90
     runs-on: ubuntu-latest
     steps:
       # Fail before fetching if the saved dataset cannot be decrypted.
@@ -50,13 +39,13 @@ jobs:
           node-version: "24"
       - name: Test refresh modes and house coverage
         run: node --test scripts/refresh-data.test.mjs
-      - name: Refresh new questions and their answers
+      - name: Refresh answers to older questions
         env:
           # Lets the refresh decrypt the committed .enc to find its prior state.
           PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
-        # Re-fetch recent tabling dates only; older-answer work is a separate run.
-        # Each mode keeps its own successful-refresh date for catching up missed days.
-        run: node scripts/refresh-data.mjs --mode=recent
+        # Run only after the priority refresh has committed. Also backfill any
+        # newly added house over the full window, without delaying the priority run.
+        run: node scripts/refresh-data.mjs --mode=answers
       - name: Encrypt data files
         env:
           PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
@@ -74,7 +63,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh new PQs and their answers"
+          git commit -m "Refresh answers to older PQs"
           # A push straight after the commit fails if anything landed on main while the
           # refresh was running — a merge, or another fire of this workflow. Rebase onto
           # whatever arrived and retry; the data is derived, so nothing can conflict.

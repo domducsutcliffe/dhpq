@@ -5,7 +5,8 @@ import { pbkdf2Sync, createDecipheriv } from "node:crypto";
 import { gunzipSync } from "node:zlib";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getVertical, DEFAULT_VERTICAL_ID } from "../config.js";
+import { createRefreshPlan } from "./refresh-plan.mjs";
+import { getVertical, DEFAULT_VERTICAL_ID, questionHouse, isCommonsQuestion } from "../config.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
@@ -49,8 +50,9 @@ const SEARCH_TERMS = VERTICAL.searchTerm
   ? (Array.isArray(VERTICAL.searchTerm) ? VERTICAL.searchTerm : [VERTICAL.searchTerm])
   : [];
 
+const HOUSES = VERTICAL.houses || [VERTICAL.house || "Commons"];
+
 const SOURCE_PARAMS = {
-  house: VERTICAL.house,
   answeringBodies: VERTICAL.answeringBodies,
   answered: "Any",
   includeWithdrawn: "false",
@@ -602,12 +604,12 @@ function monthChunks(start, end, dateField = "tabledWhen") {
 // values marching up to 22,000, and the API starts resetting the connection long before
 // that (a request that returns in 5s at skip=0 simply dies deep in). A month of
 // questions is ~300 rows — three or four shallow pages — which it serves happily.
-async function fetchWindow(windowStart, windowEnd, dateField = "tabledWhen") {
+async function fetchWindow(windowStart, windowEnd, dateField = "tabledWhen", houses = HOUSES) {
   const chunks = monthChunks(windowStart, windowEnd, dateField);
   const byId = new Map();
 
   for (const [index, chunk] of chunks.entries()) {
-    const items = await fetchForTerms(chunk);
+    const items = await fetchForTerms(chunk, houses);
     for (const item of items) {
       const q = getQuestion(item);
       if (q && q.id != null) byId.set(q.id, item);
@@ -624,37 +626,20 @@ async function fetchWindow(windowStart, windowEnd, dateField = "tabledWhen") {
 // Run the paged fetch once per configured search term and merge the raw items by
 // question id (a question matching two of the configured terms is fetched by each of
 // them, but must appear only once).
-async function fetchForTerms(queryParams) {
-  // Department-wide: no searchTerm parameter at all.
-  if (!SEARCH_TERMS.length) {
-    return fetchQuestionsPaged(queryParams);
-  }
-  if (SEARCH_TERMS.length === 1) {
-    return fetchQuestionsPaged({ ...queryParams, searchTerm: SEARCH_TERMS[0] });
-  }
-
+async function fetchForTerms(queryParams, houses = HOUSES) {
   const byId = new Map();
-  let succeeded = 0;
-  for (const term of SEARCH_TERMS) {
-    console.log(`— searchTerm "${term}"`);
-    try {
-      const items = await fetchQuestionsPaged({ ...queryParams, searchTerm: term });
+  for (const house of houses) {
+    for (const term of SEARCH_TERMS.length ? SEARCH_TERMS : [null]) {
+      // Never silently publish a partial house or search-term result.
+      const items = await fetchQuestionsPaged({
+        ...queryParams, house, ...(term ? { searchTerm: term } : {}),
+      });
       for (const item of items) {
         const q = getQuestion(item);
-        if (q && q.id != null) byId.set(q.id, item);
+        if (q && q.id != null) byId.set(q.id, { ...item, sourceHouse: house });
       }
-      succeeded += 1;
-    } catch (error) {
-      // One term failing (e.g. a transient 429/500) shouldn't sink the whole build —
-      // keep what the other terms returned. If every term fails, re-throw so the run
-      // doesn't silently overwrite the dataset with nothing.
-      console.warn(`  searchTerm "${term}" failed: ${error.message} — skipping this term.`);
     }
   }
-  if (!succeeded) {
-    throw new Error(`All ${SEARCH_TERMS.length} search terms failed; aborting to preserve existing data.`);
-  }
-  console.log(`Merged ${byId.size} unique questions across ${succeeded}/${SEARCH_TERMS.length} search terms`);
   return [...byId.values()];
 }
 
@@ -882,13 +867,15 @@ async function buildConstituencyLookup() {
 function mapQuestion(item, constituencyLookup) {
   const q = getQuestion(item);
   const member = q.askingMember || {};
-  const constituency = member.memberFrom || "";
-  const regionRecord = constituencyLookup.get(normaliseName(constituency));
+  const house = item.sourceHouse || questionHouse(q);
+  const constituency = house === "Commons" ? member.memberFrom || "" : "";
+  const regionRecord = house === "Commons" ? constituencyLookup.get(normaliseName(constituency)) : null;
   const dateTabled = q.dateTabled ? q.dateTabled.slice(0, 10) : "";
   const dateAnswered = q.dateAnswered ? q.dateAnswered.slice(0, 10) : "";
 
   return {
     id: q.id,
+    house,
     uin: q.uin,
     url: dateTabled && q.uin ? `${DETAIL_BASE}/${dateTabled}/${q.uin}` : "",
     heading: q.heading || "",
@@ -909,10 +896,10 @@ function mapQuestion(item, constituencyLookup) {
     },
     region: {
       constituency,
-      nation: regionRecord?.nation || "Unknown",
+      nation: house === "Lords" ? "" : regionRecord?.nation || "Unknown",
       parliamentaryRegion: regionRecord?.parliamentaryRegion || "",
-      nhsRegion: regionRecord?.nhsRegion || "Unknown",
-      sourceBoundary: regionRecord?.sourceBoundary || "unmatched",
+      nhsRegion: house === "Lords" ? "" : regionRecord?.nhsRegion || "Unknown",
+      sourceBoundary: house === "Lords" ? "not-applicable" : regionRecord?.sourceBoundary || "unmatched",
       mappedToConstituency: regionRecord?.mappedToConstituency || "",
     },
   };
@@ -951,7 +938,7 @@ function buildSummary(
     const partyKey = question.member.partyAbbreviation || question.member.party || "Unknown";
     increment(partyCounts, partyKey);
     if (question.member.party) partyNames.set(partyKey, question.member.party);
-    increment(regionCounts, question.region.nhsRegion);
+    if (isCommonsQuestion(question)) increment(regionCounts, question.region.nhsRegion);
     increment(memberCounts, question.member.name || "Unknown");
 
     const month = question.dateTabled ? question.dateTabled.slice(0, 7) : "Unknown";
@@ -971,8 +958,10 @@ function buildSummary(
     bucket.total += 1;
     bucket[question.answered ? "answered" : "unanswered"] += 1;
     bucket.byParty[partyKey] = (bucket.byParty[partyKey] || 0) + 1;
-    bucket.byRegion[question.region.nhsRegion] =
-      (bucket.byRegion[question.region.nhsRegion] || 0) + 1;
+    if (isCommonsQuestion(question)) {
+      bucket.byRegion[question.region.nhsRegion] =
+        (bucket.byRegion[question.region.nhsRegion] || 0) + 1;
+    }
   }
 
   const dates = questions.map((question) => question.dateTabled).filter(Boolean).sort();
@@ -1024,6 +1013,7 @@ function buildSummary(
       historicConstituencySource: CONSTITUENCY_2020_CSV,
       constituencyOverlapSource: PARL10_TO_PARL25_CSV,
       params: SOURCE_PARAMS,
+      houses: HOUSES,
     },
     window: {
       startsOn: getWindowStart(),
@@ -1210,74 +1200,37 @@ async function main() {
   const skipEnrich = process.argv.includes("--no-enrich");
   const windowStart = getWindowStart();
 
-  // The dataset is the whole window (e.g. this Parliament), but questions older than a
-  // month or so are settled — they already have their answer and it won't change. So by
-  // default only the recent slice is re-fetched and merged over the carried-forward
-  // dataset. Two queries cover the ways a row can change: tabled recently (new questions)
-  // and *answered* recently (a question tabled months ago can still be answered late).
-  // `--full` forces a complete rebuild of the window.
+  const previousSummary = await loadPreviousSummary();
   const forceFull = process.argv.includes("--full");
-  const lookbackDays = Number(process.env.REFRESH_LOOKBACK_DAYS || 60);
-
-  let questions;
+  const modeArg = process.argv.find((arg) => arg.startsWith("--mode="));
+  const mode = modeArg ? modeArg.split("=")[1] : "all";
+  if (previousLoadFailure && !forceFull) {
+    throw new Error(`${previousLoadFailure} Refusing to overwrite unreadable previous data.`);
+  }
+  const plan = createRefreshPlan({
+    mode, today: todayIso(), windowStart, houses: HOUSES,
+    previous: previousSummary || {}, hasExisting: existingQuestions.length > 0, forceFull,
+    recentDays: Number(process.env.NEW_QUESTIONS_LOOKBACK_DAYS || 7),
+    answerDays: Number(process.env.REFRESH_LOOKBACK_DAYS || 60),
+  });
+  let questions = existingQuestions;
+  const refreshedIds = new Set();
   if (isOffline) {
     console.log("Offline mode: rebuilding from existing questions only (no API fetch)...");
-    questions = existingQuestions;
-  } else if (existingQuestions.length && !forceFull) {
-    const since = maxDate(subtractDays(todayIso(), lookbackDays), windowStart);
-    console.log(
-      `Incremental refresh: re-fetching questions tabled or answered since ${since} ` +
-        `(${existingQuestions.length.toLocaleString()} carried forward). Use --full to rebuild the window.`,
-    );
-
-    const [tabledRaw, answeredRaw] = [
-      await fetchWindow(since, todayIso()),
-      // Bound and chunk answer dates too: a single open-ended query can time out
-      // on deep pages. Do not constrain tabled dates here — old questions can
-      // receive new answers and must still be updated.
-      await fetchWindow(since, todayIso(), "answeredWhen"),
-    ];
-
-    const fetched = [...tabledRaw, ...answeredRaw]
-      .map((item) => mapQuestion(item, lookup))
-      .filter(matchesVertical);
-
-    const byId = new Map(existingQuestions.map((q) => [q.id, q]));
-    let added = 0;
-    for (const q of fetched) {
-      const prior = byId.get(q.id);
-      carryForwardFullText(q, prior);
-      if (!prior) added += 1;
-      byId.set(q.id, q);
+  } else {
+    const byId = new Map(plan.replace ? [] : existingQuestions.map(q => [q.id, q]));
+    const priorById = new Map(existingQuestions.map(q => [q.id, q]));
+    for (const request of plan.requests) {
+      console.log(`Refresh ${mode}: ${request.houses.join(" + ")} ${request.dateField} ${request.from} → ${request.to}`);
+      const raw = await fetchWindow(request.from, request.to, request.dateField, request.houses);
+      for (const q of raw.map(item => mapQuestion(item, lookup)).filter(matchesVertical)) {
+        carryForwardFullText(q, byId.get(q.id) || priorById.get(q.id));
+        byId.set(q.id, q);
+        refreshedIds.add(q.id);
+      }
     }
     questions = [...byId.values()];
-    console.log(
-      `Refreshed ${fetched.length} recent questions (${added} new). Total: ${questions.length.toLocaleString()}`,
-    );
-  } else {
-    // Refuse to rebuild the whole window behind the operator's back. If a dataset is
-    // committed and we simply could not open it, a "full rebuild" is a data-loss event
-    // dressed up as a refresh: it re-fetches ~27 months for nothing, drops every
-    // enriched full text, and hides the real problem (usually a missing secret).
-    if (previousLoadFailure && !forceFull) {
-      throw new Error(
-        `${previousLoadFailure} Refusing to rebuild the whole window from scratch — fix the ` +
-          "cause (usually the PQ_PASSWORD secret) and re-run, or pass --full if a complete " +
-          "rebuild really is intended.",
-      );
-    }
-    console.log(
-      `Fetching every ${VERTICAL.answeringBodyLabel} question tabled since ${windowStart}, month by month...`,
-    );
-    const rawItems = await fetchWindow(windowStart, todayIso());
-    const fetched = rawItems.map((item) => mapQuestion(item, lookup)).filter(matchesVertical);
-
-    const priorById = new Map(existingQuestions.map((q) => [q.id, q]));
-    for (const q of fetched) {
-      carryForwardFullText(q, priorById.get(q.id));
-    }
-    questions = fetched;
-    console.log(`Fetched ${questions.length} questions in window`);
+    console.log(`Refreshed ${refreshedIds.size} questions. Total: ${questions.length.toLocaleString()}`);
   }
 
   // Drop anything that has aged out of the window (a question tabled 8 days ago is no
@@ -1302,7 +1255,7 @@ async function main() {
   const wantEnrich = !isOffline && !skipEnrich;
 
   if (wantEnrich) {
-    await enrichFullAnswers(questions);
+    await enrichFullAnswers(mode === "recent" ? questions.filter(q => refreshedIds.has(q.id)) : questions);
   } else if (isOffline) {
     console.log("Offline mode: skipping live enrichment.");
   } else {
@@ -1318,13 +1271,12 @@ async function main() {
   const unmatchedConstituencies = [
     ...new Set(
       questions
-        .filter((question) => question.region.nhsRegion === "Unknown")
+        .filter((question) => isCommonsQuestion(question) && question.region.nhsRegion === "Unknown")
         .map((question) => question.member.constituency)
         .filter(Boolean),
     ),
   ].sort();
 
-  const previousSummary = await loadPreviousSummary();
   const summary = buildSummary(
     questions,
     constituencyRecords,
@@ -1332,6 +1284,9 @@ async function main() {
     taxonomy,
     previousSummary,
   );
+  summary.refresh = isOffline ? previousSummary?.refresh || {} : plan.refresh;
+  summary.source.completedHouses = isOffline
+    ? previousSummary?.source?.completedHouses || ["Commons"] : plan.completedHouses;
 
   await writeFile(
     path.join(verticalDir, "questions.json"),
@@ -1357,7 +1312,12 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+export { mapQuestion, buildSummary, fetchWindow, fetchForTerms };
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
+

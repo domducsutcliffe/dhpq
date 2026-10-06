@@ -9,7 +9,7 @@ on:
   # Also deploy after the scheduled data refresh commits new data (its commit is
   # made with GITHUB_TOKEN and so does not itself trigger the push event above).
   workflow_run:
-    workflows: ["Refresh PQ data"]
+    workflows: ["Refresh PQ data", "Refresh older PQ answers"]
     types: [completed]
   workflow_dispatch:
 
@@ -31,6 +31,8 @@ jobs:
       url: ${{ steps.deploy1.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -60,3 +62,4 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 3)
         if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
         uses: actions/deploy-pages@v4
+

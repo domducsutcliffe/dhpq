@@ -18,16 +18,13 @@ export const VERTICALS = [
   {
     id: "commons",
     // Lowercase noun used inline in sentences, e.g. "Total Commons PQs".
-    topic: "Commons",
+    topic: "DHSC",
     // Shown as the page <title> and the top-bar brand.
-    brandTitle: "Commons PQ Dashboard",
-    label: "Commons",
+    brandTitle: "DHSC PQ Dashboard",
+    label: "DHSC",
 
     // --- UK Parliament Written Questions API scope ---
-    // The answering body also answers Lords questions (~80/week), but Lords members have
-    // no constituency, so every NHS-region feature here would read "Unknown" for
-    // them. Switch to "Lords" (or run a second pass) only alongside that caveat.
-    house: "Commons",
+    houses: ["Commons", "Lords"],
     answeringBodies: "17", // Parliament's answeringBodies id for the department tracked here
     answeringBodyLabel: "in-scope",
 
@@ -80,4 +77,14 @@ export function getVertical(id) {
     VERTICALS.find((v) => v.id === DEFAULT_VERTICAL_ID) ||
     VERTICALS[0]
   );
+}
+
+
+// Older Commons-only chunks did not store a house field.
+export function questionHouse(question) {
+  return question.house || (/^HL/i.test(String(question.uin || "")) ? "Lords" : "Commons");
+}
+
+export function isCommonsQuestion(question) {
+  return questionHouse(question) === "Commons";
 }
