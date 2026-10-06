@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=commons-3" />
+    <link rel="stylesheet" href="styles.css?v=house-views-1" />
   </head>
   <body>
     <header class="topbar">
@@ -31,6 +31,12 @@
     </header>
 
     <main class="page">
+
+      <div id="house-views" class="house-views" role="group" aria-label="Parliamentary house view">
+        <button type="button" class="house-view house-view-combined" data-house="" aria-pressed="true">Combined</button>
+        <button type="button" class="house-view house-view-commons" data-house="Commons" aria-pressed="false">Commons</button>
+        <button type="button" class="house-view house-view-lords" data-house="Lords" aria-pressed="false">Lords</button>
+      </div>
 
       <section class="metrics" aria-label="Summary metrics">
         <article class="metric">
@@ -62,11 +68,6 @@
           <label class="search-scope"><input id="search-question-only" type="checkbox" checked /> Search question text only</label>
           <label class="short-mode" title="Drop the &quot;To ask the Secretary of State…&quot; opening from each question in the table"><input id="short-mode" type="checkbox" /> Short mode</label>
         </div>
-        <select id="house-filter" aria-label="House filter">
-          <option value="">Both Houses</option>
-          <option value="Commons">Commons</option>
-          <option value="Lords">Lords</option>
-        </select>
         <select id="party-filter" aria-label="Party filter">
           <option value="">All parties</option>
         </select>
@@ -152,7 +153,7 @@
     <div id="chart-tooltip" class="chart-tooltip" style="opacity: 0; pointer-events: none; position: absolute; z-index: 1000;"></div>
     <div id="answer-tooltip" class="answer-tooltip" role="tooltip"></div>
     <div id="similar-panel" class="similar-panel" role="dialog" aria-label="Similar questions" hidden></div>
-    <script src="scripts/app.js?v=both-houses-1" type="module"></script>
+    <script src="scripts/app.js?v=house-views-1" type="module"></script>
   </body>
 </html>
 

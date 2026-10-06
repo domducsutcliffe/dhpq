@@ -297,7 +297,7 @@ const elements = {
   search: document.querySelector("#search"),
   searchQuestionOnly: document.querySelector("#search-question-only"),
   shortMode: document.querySelector("#short-mode"),
-  houseFilter: document.querySelector("#house-filter"),
+  houseViews: document.querySelector("#house-views"),
   partyFilter: document.querySelector("#party-filter"),
   regionFilter: document.querySelector("#region-filter"),
   answerFilter: document.querySelector("#answer-filter"),
@@ -690,7 +690,6 @@ function renderScopeStatus(filteredCount) {
       state.selectedTopic = "";
       state.tabledSince = "";
       state.house = "";
-      elements.houseFilter.value = "";
       state.party = "";
       state.region = "";
       elements.partyFilter.value = "";
@@ -1855,7 +1854,14 @@ if (elements.answerTooltip && elements.table) {
   window.addEventListener("resize", hideAnswerTip);
 }
 
+function renderHouseViews() {
+  for (const button of elements.houseViews.querySelectorAll("button[data-house]")) {
+    button.setAttribute("aria-pressed", String(button.dataset.house === state.house));
+  }
+}
+
 function render() {
+  renderHouseViews();
   const mode = resolveBucketMode();
   if (mode !== state.bucketMode) {
     state.bucketMode = mode;
@@ -2032,8 +2038,15 @@ if (elements.searchQuestionOnly) {
 
 
 
-elements.houseFilter.addEventListener("change", (event) => {
-  state.house = event.target.value;
+elements.houseViews.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-house]");
+  if (!button || !elements.houseViews.contains(button)) return;
+  state.house = button.dataset.house;
+  // A constituency-based filter cannot apply to a Lords-only view.
+  if (state.house === "Lords") {
+    state.region = "";
+    elements.regionFilter.value = "";
+  }
   render();
 });
 
@@ -2135,7 +2148,6 @@ if (elements.shortMode) {
 
 elements.resetFilters.addEventListener("click", () => {
   state.house = "";
-  elements.houseFilter.value = "";
   state.query = "";
   state.party = "";
   state.region = "";
@@ -2276,7 +2288,7 @@ document.addEventListener("click", (event) => {
   const isInsideChart = elements.monthlyChart.contains(event.target);
   const isInsideFilterControl =
     (elements.search && elements.search.contains(event.target)) ||
-    (elements.houseFilter && elements.houseFilter.contains(event.target)) ||
+    (elements.houseViews && elements.houseViews.contains(event.target)) ||
     (elements.partyFilter && elements.partyFilter.contains(event.target)) ||
     (elements.regionFilter && elements.regionFilter.contains(event.target)) ||
     (elements.answerFilter && elements.answerFilter.contains(event.target)) ||
