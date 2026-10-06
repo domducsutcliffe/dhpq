@@ -11,28 +11,15 @@ on:
       - config.js
       - .github/workflows/refresh-data.yml
   schedule:
-    # GitHub's cron is best-effort: it queues these alongside everyone else's and drops
-    # or delays them under load, worst on the popular minutes (:00, :15, :30, :45).
-    #
-    # Measured on the sibling repo, 27 Aug – 10 Sep 2026: of seven fires a morning, all
-    # on :00 or :30, exactly two arrived each day and none in the morning — 05:30 UTC
-    # landed at 09:47–11:42, and twice in the late afternoon (16:36, 17:32). A plain
-    # 06:30/07:00/08:00 schedule is three fires on precisely the worst minutes.
-    #
-    # So: odd minutes, and enough attempts that a dropped or delayed fire still leaves
-    # the data fresh by the time anyone looks. A run that finds nothing new takes ~30s
-    # and commits nothing, so the extra fires cost only runner time — free here.
-    #
-    # 06:07 through 08:47 UK during BST; an hour earlier once the clocks go back.
-    - cron: "7,27,47 5,6,7 * * *"
-    # Catch-up, in case the whole morning window was dropped: ~10:13 and ~11:13 UK.
-    - cron: "13 9,10 * * *"
+    # 06:00 UK time every day, following GMT/BST automatically.
+    # GitHub may queue scheduled runs later during periods of high load.
+    - cron: "0 6 * * *"
+      timezone: "Europe/London"
 
 permissions:
   contents: write
 
-# Nine fires a morning can overlap if one runs long. Queue them instead of racing:
-# two refreshes pushing at once is exactly how a run dies on a rejected push.
+# Serialise scheduled, manual and code-change refreshes to avoid competing pushes.
 concurrency:
   group: refresh-data
   cancel-in-progress: false
@@ -62,9 +49,10 @@ jobs:
         env:
           # Lets the refresh decrypt the committed .enc to find its prior state.
           PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
-        # Re-fetches the whole window month by month (~25 chunks, a few minutes). It does
-        # NOT backfill full answer text — the app fetches answers from the Parliament API
-        # on hover instead (config.enrichAnswers).
+        # Merge new questions and newly answered questions into the saved dataset.
+        # The script rechecks 60 days of tabled/answer dates in monthly batches, so
+        # missed runs are caught up and old questions receiving new answers are updated.
+        # Full answer text is fetched by the app on hover (config.enrichAnswers).
         run: node scripts/refresh-data.mjs
       - name: Encrypt data files
         env:
