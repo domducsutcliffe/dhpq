@@ -406,7 +406,7 @@ async function fetchJson(url, tries = 5) {
       // Without a timeout a stalled socket hangs this await forever and the retry
       // logic below never runs — a long backfill can silently wedge on one bad
       // connection. Abort slow requests so they fall through to a retry instead.
-      const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
+      const response = await fetch(url, { signal: AbortSignal.timeout(60000) });
       if (!response.ok) {
         const error = new Error(`${response.status} ${response.statusText}`);
         error.status = response.status;
@@ -420,11 +420,16 @@ async function fetchJson(url, tries = 5) {
         // 429 (rate limited) needs a much longer backoff than transient errors
         const base = error.status === 429 ? 3000 : 800;
         const wait = error.retryAfterMs || base * attempt;
+        console.warn(
+          `Request failed (${attempt}/${tries}): ${url} — ${error.message}; retrying in ${wait}ms.`,
+        );
         await new Promise((resolve) => setTimeout(resolve, wait));
       }
     }
   }
-  throw lastError;
+  throw new Error(`Request failed after ${tries} attempts: ${url} — ${lastError.message}`, {
+    cause: lastError,
+  });
 }
 
 async function fetchText(url) {
@@ -571,7 +576,7 @@ async function fetchQuestionsPaged(queryParams) {
 }
 
 // Calendar-month [from, to] ranges covering start..end inclusive.
-function monthChunks(start, end) {
+function monthChunks(start, end, dateField = "tabledWhen") {
   const chunks = [];
   const cursor = new Date(`${start.slice(0, 7)}-01T00:00:00Z`);
   const last = new Date(`${end}T00:00:00Z`);
@@ -583,8 +588,8 @@ function monthChunks(start, end) {
       .toISOString()
       .slice(0, 10);
     chunks.push({
-      tabledWhenFrom: monthStart < start ? start : monthStart,
-      tabledWhenTo: monthEnd > end ? end : monthEnd,
+      [`${dateField}From`]: monthStart < start ? start : monthStart,
+      [`${dateField}To`]: monthEnd > end ? end : monthEnd,
     });
     cursor.setUTCMonth(cursor.getUTCMonth() + 1);
   }
@@ -597,8 +602,8 @@ function monthChunks(start, end) {
 // values marching up to 22,000, and the API starts resetting the connection long before
 // that (a request that returns in 5s at skip=0 simply dies deep in). A month of
 // questions is ~300 rows — three or four shallow pages — which it serves happily.
-async function fetchWindow(windowStart, windowEnd) {
-  const chunks = monthChunks(windowStart, windowEnd);
+async function fetchWindow(windowStart, windowEnd, dateField = "tabledWhen") {
+  const chunks = monthChunks(windowStart, windowEnd, dateField);
   const byId = new Map();
 
   for (const [index, chunk] of chunks.entries()) {
@@ -608,7 +613,7 @@ async function fetchWindow(windowStart, windowEnd) {
       if (q && q.id != null) byId.set(q.id, item);
     }
     console.log(
-      `  [${index + 1}/${chunks.length}] ${chunk.tabledWhenFrom} → ${chunk.tabledWhenTo}: ` +
+      `  ${dateField} [${index + 1}/${chunks.length}] ${chunk[`${dateField}From`]} → ${chunk[`${dateField}To`]}: ` +
         `${items.length} questions (${byId.size.toLocaleString()} total)`,
     );
   }
@@ -1227,7 +1232,10 @@ async function main() {
 
     const [tabledRaw, answeredRaw] = [
       await fetchWindow(since, todayIso()),
-      await fetchForTerms({ answeredWhenFrom: since }),
+      // Bound and chunk answer dates too: a single open-ended query can time out
+      // on deep pages. Do not constrain tabled dates here — old questions can
+      // receive new answers and must still be updated.
+      await fetchWindow(since, todayIso(), "answeredWhen"),
     ];
 
     const fetched = [...tabledRaw, ...answeredRaw]

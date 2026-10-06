@@ -2,6 +2,14 @@ name: Refresh PQ data
 
 on:
   workflow_dispatch:
+  # Validate refresh fixes immediately; generated data commits do not match.
+  push:
+    branches: [main]
+    paths:
+      - scripts/refresh-data.mjs
+      - scripts/encrypt-data.mjs
+      - config.js
+      - .github/workflows/refresh-data.yml
   schedule:
     # GitHub's cron is best-effort: it queues these alongside everyone else's and drops
     # or delays them under load, worst on the popular minutes (:00, :15, :30, :45).
