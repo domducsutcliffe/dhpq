@@ -6,6 +6,7 @@ on:
   push:
     branches: [main]
     paths:
+      - .github/refresh-request.json
       - scripts/refresh-data.mjs
       - scripts/refresh-plan.mjs
       - scripts/refresh-data.test.mjs
