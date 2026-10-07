@@ -13,9 +13,10 @@ on:
       - config.js
       - .github/workflows/refresh-data.yml
   schedule:
-    # 06:00 UK time every day, following GMT/BST automatically.
-    # GitHub may queue scheduled runs later during periods of high load.
+    # Primary 06:00 UK refresh, plus off-hour catch-ups if GitHub misses it.
     - cron: "0 6 * * *"
+      timezone: "Europe/London"
+    - cron: "17 6,7 * * *"
       timezone: "Europe/London"
 
 permissions:
@@ -45,12 +46,33 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Check whether today's scheduled refresh is already complete
+        id: freshness
+        env:
+          TRIGGER_EVENT: ${{ github.event_name }}
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, appendFileSync } from 'node:fs';
+          const ukDate = value => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London' }).format(new Date(value));
+          let alreadyFresh = false;
+          try {
+            const status = JSON.parse(readFileSync('data/refresh-status.json', 'utf8'));
+            const hour = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', hour: '2-digit', hourCycle: 'h23' }).format(new Date(status.refreshedAt)));
+            alreadyFresh = ukDate(status.refreshedAt) === ukDate(Date.now()) && hour >= 6;
+          } catch {}
+          const run = process.env.TRIGGER_EVENT !== 'schedule' || !alreadyFresh;
+          appendFileSync(process.env.GITHUB_OUTPUT, 'run=' + run + '\n');
+          console.log(run ? 'Refresh required.' : 'Already refreshed today; skipping scheduled catch-up.');
+          NODE
       - uses: actions/setup-node@v4
+        if: steps.freshness.outputs.run == 'true'
         with:
           node-version: "24"
       - name: Test refresh modes and house coverage
+        if: steps.freshness.outputs.run == 'true'
         run: node --test scripts/refresh-data.test.mjs
       - name: Refresh new questions and their answers
+        if: steps.freshness.outputs.run == 'true'
         env:
           # Lets the refresh decrypt the committed .enc to find its prior state.
           PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
@@ -58,16 +80,25 @@ jobs:
         # Each mode keeps its own successful-refresh date for catching up missed days.
         run: node scripts/refresh-data.mjs --mode=recent
       - name: Encrypt data files
+        if: steps.freshness.outputs.run == 'true'
         env:
           PQ_PASSWORD: ${{ secrets.PQ_PASSWORD }}
         run: node scripts/encrypt-data.mjs
+      - name: Record successful refresh time
+        if: steps.freshness.outputs.run == 'true'
+        run: |
+          node --input-type=module <<'NODE'
+          import { writeFileSync } from 'node:fs';
+          writeFileSync('data/refresh-status.json', JSON.stringify({ refreshedAt: new Date().toISOString() }) + '\n');
+          NODE
       - name: Commit data changes
+        if: steps.freshness.outputs.run == 'true'
         run: |
           # Stage everything under data/commons (encrypted chunks, the questions-index.json
           # manifest, and any chunk files added/removed as the dataset grows or shrinks)
           # plus the shared geography file. -A picks up deletions; .gitignore keeps the
           # plaintext json out.
-          git add -A data/commons data/constituency-regions.json
+          git add -A data/commons data/constituency-regions.json data/refresh-status.json
           if git diff --cached --quiet; then
             echo "No PQ data changes."
             exit 0
