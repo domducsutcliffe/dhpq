@@ -1342,12 +1342,12 @@ table th {
 }
 
 .house-view-commons {
-  --house-colour: #006b3c;
+  --house-colour: #006548;
   --house-tint: #e8f3ec;
 }
 
 .house-view-lords {
-  --house-colour: #7b1e3a;
+  --house-colour: #B50938;
   --house-tint: #f6eaf0;
 }
 
@@ -1364,4 +1364,28 @@ table th {
 .house-view:focus-visible {
   outline: 3px solid var(--house-colour);
   outline-offset: 3px;
+}
+
+/* Match the selected House; Combined retains the orange header. */
+.topbar {
+  --header-colour: #ff6600;
+  --header-text: #000;
+  background: var(--header-colour);
+  color: var(--header-text);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.topbar[data-house="Commons"] {
+  --header-colour: #006548;
+  --header-text: #fff;
+}
+
+.topbar[data-house="Lords"] {
+  --header-colour: #B50938;
+  --header-text: #fff;
+}
+
+.topbar .brand,
+.topbar .data-status-bar {
+  color: var(--header-text);
 }

@@ -288,6 +288,7 @@ function bucketLabel(key, long = false) {
 }
 
 const elements = {
+  topbar: document.querySelector(".topbar"),
   status: document.querySelector("#data-status"),
   total: document.querySelector("#metric-total"),
   answered: document.querySelector("#metric-answered"),
@@ -647,7 +648,7 @@ function renderScopeStatus(filteredCount) {
     : `${total} PQs`;
 
   if (filterParts.length > 0) {
-    statusText += ` <span style="cursor:pointer; text-decoration:underline; font-weight:bold; margin-left:6px; color:#000000;" id="clear-filters-link">(clear filters)</span>`;
+    statusText += ` <span style="cursor:pointer; text-decoration:underline; font-weight:bold; margin-left:6px; color:inherit;" id="clear-filters-link">(clear filters)</span>`;
   }
 
   elements.status.innerHTML = statusText;
@@ -1855,6 +1856,7 @@ if (elements.answerTooltip && elements.table) {
 }
 
 function renderHouseViews() {
+  elements.topbar.dataset.house = state.house || "Combined";
   for (const button of elements.houseViews.querySelectorAll("button[data-house]")) {
     button.setAttribute("aria-pressed", String(button.dataset.house === state.house));
   }
